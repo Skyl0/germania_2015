@@ -330,14 +330,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 68, ../sass/include/_layout.scss */
 .slider {
   height: 400px;
-  background: #006699;
+  background: url("../images/Das_Haus_online.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 /**
  *   Shortcode Definitions
  */
-/* line 77, ../sass/include/_layout.scss */
+/* line 79, ../sass/include/_layout.scss */
 .shortcodes {
+  padding: 20px 0;
   height: 400px;
   background: #cccccc;
 }
@@ -345,8 +347,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Content Definitions
  */
-/* line 86, ../sass/include/_layout.scss */
+/* line 89, ../sass/include/_layout.scss */
 .content {
+  padding: 20px 0;
   min-height: 200px;
   background: white;
 }
@@ -354,10 +357,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Bottom Definitions
  */
-/* line 95, ../sass/include/_layout.scss */
+/* line 99, ../sass/include/_layout.scss */
 .bottom {
+  padding: 20px 0;
   height: 400px;
   background: #cccccc;
+}
+
+/* line 105, ../sass/include/_layout.scss */
+.bottom_left i.fa {
+  width: 30px;
+  font-size: 16px;
 }
 
 @font-face {
@@ -384,26 +394,118 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   font-style: italic;
 }
-/* line 30, ../sass/include/_fonts.scss */
+/* line 29, ../sass/include/_fonts.scss */
 h1 {
   font-size: 26px;
   line-height: 36px;
 }
 
-/* line 36, ../sass/include/_fonts.scss */
+/* line 35, ../sass/include/_fonts.scss */
 h2 {
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
 }
 
-/* line 42, ../sass/include/_fonts.scss */
+/* line 41, ../sass/include/_fonts.scss */
 h3 {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 47, ../sass/include/_fonts.scss */
+p {
+  line-height: 150%;
+}
+
+/* line 51, ../sass/include/_fonts.scss */
+b {
+  font-weight: bold;
+}
+
+/* line 55, ../sass/include/_fonts.scss */
+a {
+  color: black;
+  transition: all 0.3s;
+}
+
+/* line 60, ../sass/include/_fonts.scss */
+a:hover {
+  color: #666666;
+}
+
+/** 
+ *   Main Menu 
+ */
+/* line 4, ../sass/include/_mainmenu.scss */
+ul.mainmenu {
+  list-style-type: none;
+}
+
+/* line 11, ../sass/include/_mainmenu.scss */
+ul.mainmenu li {
+  display: inline-block;
+}
+/* line 15, ../sass/include/_mainmenu.scss */
+ul.mainmenu li a {
+  margin: 30px 0;
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  display: block;
+  transition: all 0.5s;
+}
+/* line 28, ../sass/include/_mainmenu.scss */
+ul.mainmenu li a:hover {
+  background-color: #006699;
+  color: white;
+}
+
+/* line 2, ../sass/include/_othermenus.scss */
+.bottom_right ul li a, .bottom_middle ul li a {
+  line-height: 150%;
+}
+
+/**
+ *   SLIDER OWN DEFINITIONS
+ */
+/* line 5, ../sass/include/_slider.scss */
+.slider {
+  color: white;
+}
+/* line 8, ../sass/include/_slider.scss */
+.slider strong {
+  padding: 10px;
+  font-size: 36px;
+  display: inline-block;
+  border-bottom: 1px solid #cccccc;
+  background-color: rgba(51, 51, 51, 0.75);
+}
+/* line 15, ../sass/include/_slider.scss */
+.slider span {
+  clear: both;
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+  width: auto;
+  background-color: rgba(51, 51, 51, 0.75);
+}
+/* line 24, ../sass/include/_slider.scss */
+.slider a {
+  color: white;
+}
+
+/* line 29, ../sass/include/_slider.scss */
+.slider p {
+  position: relative;
+  top: 60px;
+}
+
+/* line 26, ../sass/screen.scss */
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
 }

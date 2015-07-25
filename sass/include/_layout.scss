@@ -14,7 +14,7 @@
   height: $topfooterheight;
   line-height: $topfooterheight;
   background: $gray1;
-  color: $white;
+  color: white;
   font-size: $smaller;
 }
 
@@ -40,7 +40,7 @@
   height: $topfooterheight;
   line-height: $topfooterheight;
   background: $gray1;
-  color: $white;
+  color: white;
   font-size: $smaller;
 }
 
@@ -58,7 +58,7 @@
  */
 .menu {
   height: $menuheight;
-  background: $white;
+  background: white;
 }
 
 /**
@@ -67,7 +67,9 @@
 
 .slider {
   height: $sliderheight;
-  background: $accent;
+  //background: $accent;
+  background: url('../images/Das_Haus_online.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 /**
@@ -75,6 +77,7 @@
  */
 
 .shortcodes {
+  padding: 20px 0;
   height: $shortcodesheight;
   background: $lightgray2; 
 }
@@ -84,8 +87,9 @@
  */
 
 .content {
+  padding: 20px 0;
   min-height: 200px;
-  background: $white;
+  background: white;
 }
 
 /**
@@ -93,7 +97,17 @@
  */
 
 .bottom {
+  padding: 20px 0;
   height: $shortcodesheight;
   background: $lightgray2; 
+}
+
+.bottom_left i.fa {
+  width: 30px;
+  font-size: $regular;
+}
+
+.bottom_left h1 {
+  
 }
 
