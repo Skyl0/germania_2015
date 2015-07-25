@@ -375,8 +375,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .zirkel {
   position: relative;
   display: block;
-  z-index: -100;
-  background: url("../images/zirkel_trans10.png") no-repeat top right;
+  z-index: 1;
+  background: url("../images/zirkel_trans20.png") no-repeat top right;
 }
 
 /**
@@ -385,7 +385,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 111, ../sass/include/_layout.scss */
 .shortcodes {
   padding: 40px 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(155, 155, 155, 0.5);
 }
 
 /* line 117, ../sass/include/_layout.scss */
@@ -416,14 +416,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   z-index: 500;
   padding: 15px;
-  background-color: rgba(155, 155, 155, 0.7);
+  background-color: rgba(200, 200, 200, 0.8);
   min-height: 350px;
 }
 
 /* line 145, ../sass/include/_layout.scss */
 .sc_item i {
   margin-bottom: 10px;
-  color: #cccccc;
+  color: #666666;
   font-size: 8em;
 }
 
@@ -439,39 +439,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  */
 /* line 161, ../sass/include/_layout.scss */
 .content {
+  position: relative;
+  z-index: 0;
   padding: 40px 0;
   min-height: 200px;
   background: none;
 }
 
+/* line 170, ../sass/include/_layout.scss */
+.content h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
 /**
  *   Bottom Definitions
  */
-/* line 175, ../sass/include/_layout.scss */
+/* line 180, ../sass/include/_layout.scss */
 .bottom {
   padding: 40px 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(155, 155, 155, 0.5);
 }
 
-/* line 181, ../sass/include/_layout.scss */
+/* line 186, ../sass/include/_layout.scss */
 .bottom_left i.fa {
   width: 30px;
   font-size: 16px;
 }
 
-/* line 186, ../sass/include/_layout.scss */
+/* line 191, ../sass/include/_layout.scss */
+.bottom_left p {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 196, ../sass/include/_layout.scss */
 .bottom_left h1 {
   border-bottom: 2px solid black;
   margin: 0 0 20px 0;
 }
 
-/* line 190, ../sass/include/_layout.scss */
+/* line 200, ../sass/include/_layout.scss */
 .bottom_middle h1 {
   border-bottom: 2px solid #990036;
   margin: 0 0 20px 0;
 }
 
-/* line 195, ../sass/include/_layout.scss */
+/* line 205, ../sass/include/_layout.scss */
 .bottom_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: 0 0 20px 0;
