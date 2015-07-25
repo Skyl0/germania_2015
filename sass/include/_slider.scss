@@ -10,6 +10,8 @@
     font-size: 36px;
     display: inline-block;
     border-bottom: 1px solid $lightgray2;
+   // border-right: 1px solid $gray2;
+    //@include box-shadow-slider();
     background-color: rgba(51,51,51,0.75);
   }
   span {
@@ -18,6 +20,9 @@
     font-size: $bigger;
     display:inline-block;
     width: auto;
+    //border-bottom: 1px solid $gray2;
+   // border-right: 1px solid $gray2;
+   // @include box-shadow-slider();
     background-color: rgba(51,51,51,0.75);
   }
   
@@ -29,4 +34,5 @@
 .slider p {
   position: relative;
   top: 60px;  
+  left: 10px;
 }

@@ -16,6 +16,8 @@
 @import "include/variables";
 @import "include/classes";
 
+@import "include/shadows";
+
 @import "include/layout";
 @import "include/fonts";
 @import "include/mainmenu";
@@ -25,6 +27,7 @@
 
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
+  height: auto;
 }
 
 // GRIDLE SETTINGS
@@ -44,7 +47,7 @@ $settings : (
 @include gridle_register_clear_each(2, left);
 @include gridle_register_clear_each(12, both);
 
-//@include gridle_register_column( '5on24' , 5, 24 );
+@include gridle_register_column( '5on18' , 5, 18 );
 //@include gridle_register_column( '7on24' , 7, 24 );
 
 // register states :

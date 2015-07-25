@@ -15,7 +15,7 @@
   line-height: $topfooterheight;
   background: $gray1;
   color: white;
-  font-size: $smaller;
+  font-size: $small;
 }
 
 .top a , .footer a {
@@ -32,6 +32,10 @@
   margin-right: 20px;
 }
 
+.top_right {
+  text-align: right;
+}
+
 /**
  *   Footer Definitions
  */
@@ -41,12 +45,16 @@
   line-height: $topfooterheight;
   background: $gray1;
   color: white;
-  font-size: $smaller;
+  font-size: $small;
 }
 
 .footer i.fa {
    font-size: $regular;
    margin-right: 10px;
+}
+
+.footer_left, .footer_right {
+  height: $topfooterheight;  
 }
 
 .footer_right {
@@ -61,6 +69,18 @@
   background: white;
 }
 
+.menu_right {
+  position: relative;
+}
+
+.menu_right img {
+  position: absolute;
+  right: 10px; 
+  width: 235px;
+  height: 80px;
+  padding: 20px 0;
+}
+
 /**
  *   Slider Definitions
  */
@@ -72,14 +92,66 @@
   background-size: cover;
 }
 
+/** 
+ *   Zirkel Background
+ */
+
+.zirkel {
+  position: relative;
+ // top: $topfooterheight + $menuheight + $sliderheight;
+  display: block;
+  z-index: -100;
+  background: url('../images/zirkel_trans10.png') no-repeat top right;
+}
+
 /**
  *   Shortcode Definitions
  */
 
 .shortcodes {
-  padding: 20px 0;
-  height: $shortcodesheight;
-  background: $lightgray2; 
+    padding: 40px 0;
+ // height: $shortcodesheight;
+  background: rgba(0,0,0,0.2); // Was lightgray 
+}
+
+.shortcodes > div {
+  position: relative;
+}
+
+.shortcodes_left h1 {
+  border-bottom: 2px solid $schwarz;
+  margin: -5px 0 20px 0 ;
+}
+.shortcodes_middle h1 {
+  border-bottom: 2px solid $weinrot;
+  margin: -5px 0 20px 0 ;
+}
+
+.shortcodes_right h1 {
+  border-bottom: 2px solid $gold;
+  margin: -5px 0 20px 0 ;
+}
+
+.sc_item {
+  // Die Rahmen
+ //margin: 5px;
+ position: relative;
+ z-index: 500;
+  padding: 15px;
+  background-color: rgba(155,155,155,0.7);
+  min-height: 350px;
+}
+
+.sc_item i {
+  margin-bottom: 10px;
+  color: $lightgray2;
+  font-size: 8em;
+}
+
+.sc_item a {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 /**
@@ -87,9 +159,13 @@
  */
 
 .content {
-  padding: 20px 0;
+  padding: 40px 0;
   min-height: 200px;
-  background: white;
+  background: none;
+}
+
+.content {
+ //background: url('../images/zirkel_trans.png') no-repeat top right;
 }
 
 /**
@@ -97,9 +173,9 @@
  */
 
 .bottom {
-  padding: 20px 0;
-  height: $shortcodesheight;
-  background: $lightgray2; 
+  padding: 40px 0;
+ // height: $shortcodesheight;
+  background: rgba(0,0,0,0.2); // Was lightgray 
 }
 
 .bottom_left i.fa {
@@ -108,6 +184,16 @@
 }
 
 .bottom_left h1 {
-  
+  border-bottom: 2px solid $schwarz;
+  margin: 0 0 20px 0 ;
+}
+.bottom_middle h1 {
+  border-bottom: 2px solid $weinrot;
+  margin: 0 0 20px 0 ;
+}
+
+.bottom_right h1 {
+  border-bottom: 2px solid $gold;
+  margin: 0 0 20px 0 ;
 }
 

@@ -29,19 +29,20 @@ font-style: italic;
 h1 {
   font-size: 26px;
   line-height: 36px;
-  
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 18px;
   font-weight: bold;
-
+  margin-bottom: 20px;
 }
 
 p {
@@ -59,4 +60,11 @@ a {
 
 a:hover {
   color: $gray2;
+}
+
+
+sub {
+  font-size: $smaller;
+  position: relative;
+  top: 3px;
 }
