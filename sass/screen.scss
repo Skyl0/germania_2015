@@ -1,0 +1,33 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import "include/layout";
+
+
+// GRIDLE SETTINGS
+$settings : (
+  context : 12,
+  gutter-width : 20px,
+  direction : ltr );
+  
+@include gridle_setup($settings);
+
+@include gridle_register_state ( mobile , (
+  max-width : 959px,
+  gutter-width : 0px
+) );
+
+// clear each classes :
+@include gridle_register_clear_each(2, left);
+@include gridle_register_clear_each(12, both);
+
+@include gridle_register_column( '5on24' , 5, 24 );
+@include gridle_register_column( '7on24' , 7, 24 );
+
+// register states :
+
+@include gridle_generate_classes();
