@@ -1,3 +1,99 @@
 /*
- * LAYOUT Datei
+ * General Layout
  */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/**
+ *   Top Definitions
+ */
+.top {
+  height: $topfooterheight;
+  line-height: $topfooterheight;
+  background: $gray1;
+  color: $white;
+  font-size: $smaller;
+}
+
+.top a , .footer a {
+  text-decoration: underline;
+  color: white;
+}
+
+.top i.fa {
+  font-size: $regular;
+  margin-right: 10px;
+}
+
+.top span.phone {
+  margin-right: 20px;
+}
+
+/**
+ *   Footer Definitions
+ */
+
+.footer {
+  height: $topfooterheight;
+  line-height: $topfooterheight;
+  background: $gray1;
+  color: $white;
+  font-size: $smaller;
+}
+
+.footer i.fa {
+   font-size: $regular;
+   margin-right: 10px;
+}
+
+.footer_right {
+  text-align: right;
+}
+
+/**
+ *   Menu Definitions
+ */
+.menu {
+  height: $menuheight;
+  background: $white;
+}
+
+/**
+ *   Slider Definitions
+ */
+
+.slider {
+  height: $sliderheight;
+  background: $accent;
+}
+
+/**
+ *   Shortcode Definitions
+ */
+
+.shortcodes {
+  height: $shortcodesheight;
+  background: $lightgray2; 
+}
+
+/**
+ *   Content Definitions
+ */
+
+.content {
+  min-height: 200px;
+  background: $white;
+}
+
+/**
+ *   Bottom Definitions
+ */
+
+.bottom {
+  height: $shortcodesheight;
+  background: $lightgray2; 
+}
+

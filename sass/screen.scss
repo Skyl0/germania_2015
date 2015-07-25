@@ -1,12 +1,28 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* 
+ * ----------------
+ * Template: Germania 2015
+ * Für meine liebe Germania 2015
+ * Von : Marc Ernst
+ * Firma : SkyIT Webdesign Darmstadt
+ * Erstellt: 25.7.2015
+ * ----------------
+ * Version 0.0.1
+ * ----------------
+ */
 
 @import "compass/reset";
+@import "gridle/gridle";
+
+@import "include/variables";
+@import "include/classes";
 
 @import "include/layout";
+@import "include/fonts";
 
+
+html, body {
+  font-family: "OpenSans", Arial, sans-serif;
+}
 
 // GRIDLE SETTINGS
 $settings : (
@@ -25,8 +41,8 @@ $settings : (
 @include gridle_register_clear_each(2, left);
 @include gridle_register_clear_each(12, both);
 
-@include gridle_register_column( '5on24' , 5, 24 );
-@include gridle_register_column( '7on24' , 7, 24 );
+//@include gridle_register_column( '5on24' , 5, 24 );
+//@include gridle_register_column( '7on24' , 7, 24 );
 
 // register states :
 
