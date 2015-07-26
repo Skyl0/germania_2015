@@ -2,7 +2,7 @@
 /* 
  * ----------------
  * Template: Germania 2015
- * F├╝r meine liebe Germania 2015
+ * Für meine liebe Germania 2015
  * Von : Marc Ernst
  * Firma : SkyIT Webdesign Darmstadt
  * Erstellt: 25.7.2015
@@ -10,7 +10,7 @@
  * Version 0.0.1
  * ----------------
  */
-/* line 5, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,45 +32,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -294,7 +294,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 26, ../sass/include/_layout.scss */
 .top i.fa {
   font-size: 16px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /* line 31, ../sass/include/_layout.scss */
@@ -322,7 +322,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 51, ../sass/include/_layout.scss */
 .footer i.fa {
   font-size: 16px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /* line 56, ../sass/include/_layout.scss */
@@ -340,7 +340,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  */
 /* line 67, ../sass/include/_layout.scss */
 .menu {
-  height: 120px;
+  height: 100px;
   background: white;
 }
 
@@ -355,7 +355,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   right: 10px;
   width: 235px;
   height: 80px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 /**
@@ -380,54 +380,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /**
+ *   Titlebar Definitions
+ */
+/* line 110, ../sass/include/_layout.scss */
+.titlebar {
+  height: 200px;
+  color: white;
+  background: url("../images/Das_Haus_online.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/**
  *   Shortcode Definitions
  */
-/* line 111, ../sass/include/_layout.scss */
+/* line 120, ../sass/include/_layout.scss */
 .shortcodes {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
-/* line 117, ../sass/include/_layout.scss */
+/* line 126, ../sass/include/_layout.scss */
 .shortcodes > div {
   position: relative;
 }
 
-/* line 121, ../sass/include/_layout.scss */
+/* line 131, ../sass/include/_layout.scss */
 .shortcodes_left h1 {
   border-bottom: 2px solid black;
   margin: -5px 0 20px 0;
 }
 
-/* line 125, ../sass/include/_layout.scss */
+/* line 135, ../sass/include/_layout.scss */
 .shortcodes_middle h1 {
   border-bottom: 2px solid #990036;
   margin: -5px 0 20px 0;
 }
 
-/* line 130, ../sass/include/_layout.scss */
+/* line 140, ../sass/include/_layout.scss */
 .shortcodes_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: -5px 0 20px 0;
 }
 
-/* line 135, ../sass/include/_layout.scss */
+/* line 145, ../sass/include/_layout.scss */
 .sc_item {
   position: relative;
   z-index: 500;
   padding: 15px;
-  background-color: rgba(200, 200, 200, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   min-height: 350px;
 }
 
-/* line 145, ../sass/include/_layout.scss */
+/* line 155, ../sass/include/_layout.scss */
 .sc_item i {
   margin-bottom: 10px;
   color: #666666;
   font-size: 8em;
 }
 
-/* line 151, ../sass/include/_layout.scss */
+/* line 161, ../sass/include/_layout.scss */
 .sc_item a {
   position: absolute;
   bottom: 10px;
@@ -437,7 +448,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Content Definitions
  */
-/* line 161, ../sass/include/_layout.scss */
+/* line 171, ../sass/include/_layout.scss */
 .content {
   position: relative;
   z-index: 0;
@@ -446,7 +457,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: none;
 }
 
-/* line 170, ../sass/include/_layout.scss */
+/* line 180, ../sass/include/_layout.scss */
 .content h1 {
   font-size: 28px;
   font-weight: bold;
@@ -455,37 +466,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Bottom Definitions
  */
-/* line 180, ../sass/include/_layout.scss */
+/* line 190, ../sass/include/_layout.scss */
 .bottom {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
-/* line 186, ../sass/include/_layout.scss */
+/* line 196, ../sass/include/_layout.scss */
 .bottom_left i.fa {
   width: 30px;
   font-size: 16px;
 }
 
-/* line 191, ../sass/include/_layout.scss */
+/* line 201, ../sass/include/_layout.scss */
 .bottom_left p {
   line-height: 20px;
   margin-bottom: 20px;
 }
 
-/* line 196, ../sass/include/_layout.scss */
+/* line 206, ../sass/include/_layout.scss */
 .bottom_left h1 {
   border-bottom: 2px solid black;
   margin: 0 0 20px 0;
 }
 
-/* line 200, ../sass/include/_layout.scss */
+/* line 210, ../sass/include/_layout.scss */
 .bottom_middle h1 {
   border-bottom: 2px solid #990036;
   margin: 0 0 20px 0;
 }
 
-/* line 205, ../sass/include/_layout.scss */
+/* line 215, ../sass/include/_layout.scss */
 .bottom_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: 0 0 20px 0;
@@ -579,10 +590,10 @@ ul.mainmenu li {
 }
 /* line 15, ../sass/include/_mainmenu.scss */
 ul.mainmenu li a {
-  margin: 30px 0;
+  margin: 25px 0;
   padding: 0 20px;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -607,8 +618,9 @@ ul.mainmenu li a:hover {
 /* line 5, ../sass/include/_slider.scss */
 .slider {
   color: white;
+  text-align: left !important;
 }
-/* line 8, ../sass/include/_slider.scss */
+/* line 9, ../sass/include/_slider.scss */
 .slider strong {
   padding: 10px;
   font-size: 36px;
@@ -616,7 +628,7 @@ ul.mainmenu li a:hover {
   border-bottom: 1px solid #cccccc;
   background-color: rgba(51, 51, 51, 0.75);
 }
-/* line 17, ../sass/include/_slider.scss */
+/* line 18, ../sass/include/_slider.scss */
 .slider span {
   clear: both;
   padding: 10px;
@@ -625,19 +637,83 @@ ul.mainmenu li a:hover {
   width: auto;
   background-color: rgba(51, 51, 51, 0.75);
 }
-/* line 29, ../sass/include/_slider.scss */
+/* line 30, ../sass/include/_slider.scss */
 .slider a {
   color: white;
 }
 
-/* line 34, ../sass/include/_slider.scss */
+/* line 35, ../sass/include/_slider.scss */
 .slider p {
   position: relative;
   top: 60px;
   left: 10px;
 }
 
-/* line 28, ../sass/screen.scss */
+/** 
+ *   Title Bar Effects
+ */
+/* line 46, ../sass/include/_slider.scss */
+.titlebar h1 {
+  padding: 10px;
+  margin: 0 !important;
+  display: inline-block;
+  background-color: rgba(51, 51, 51, 0.75);
+}
+/* line 52, ../sass/include/_slider.scss */
+.titlebar p {
+  padding: 10px;
+  display: inline-block;
+  background-color: rgba(51, 51, 51, 0.75);
+}
+
+/* line 59, ../sass/include/_slider.scss */
+.titlebar > div {
+  position: relative;
+  top: 20px;
+}
+
+/**
+ *   Fixed Menu and Slider
+ */
+/* line 5, ../sass/include/_fixedelements.scss */
+body.scrollfixed .menu {
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* line 14, ../sass/include/_fixedelements.scss */
+body.scrollfixed .slider {
+  position: relative;
+  width: 100%;
+  top: 100px;
+}
+
+/* line 20, ../sass/include/_fixedelements.scss */
+body.scrollfixed .titlebar {
+  position: relative;
+  width: 100%;
+  top: 100px;
+}
+
+/* line 26, ../sass/include/_fixedelements.scss */
+body.scrollfixed .zirkel {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+
+/* line 33, ../sass/include/_fixedelements.scss */
+body.scrollfixed .footer {
+  position: relative;
+  top: 100px;
+}
+
+/* line 29, ../sass/screen.scss */
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
   height: auto;

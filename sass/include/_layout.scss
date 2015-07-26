@@ -25,7 +25,7 @@
 
 .top i.fa {
   font-size: $regular;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .top span.phone {
@@ -50,7 +50,7 @@
 
 .footer i.fa {
    font-size: $regular;
-   margin-right: 10px;
+   margin-right: 5px;
 }
 
 .footer_left, .footer_right {
@@ -78,7 +78,7 @@
   right: 10px; 
   width: 235px;
   height: 80px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 /**
@@ -105,6 +105,15 @@
 }
 
 /**
+ *   Titlebar Definitions
+ */
+.titlebar {
+    height: 200px;
+    color: white;
+    background: url('../images/Das_Haus_online.jpg') no-repeat center center;
+    background-size: cover;
+}
+/**
  *   Shortcode Definitions
  */
 
@@ -116,6 +125,7 @@
 
 .shortcodes > div {
   position: relative;
+ // display: inline-block;
 }
 
 .shortcodes_left h1 {
@@ -138,8 +148,8 @@
  position: relative;
  z-index: 500;
   padding: 15px;
-  background-color: rgba(200,200,200,0.8);
-  min-height: 350px;
+  background-color: rgba(255,255,255,0.8);
+  min-height: 350px; // TODO Fix per Javascript
 }
 
 .sc_item i {

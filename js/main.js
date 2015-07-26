@@ -8,23 +8,9 @@ jQuery(document).ready(function($)  {
 	
 	// Slider
 	
-	//$('.slider').children().addClass('slide');
+	// Search Focus on Blur
 	
-	//$('.flexslider').flexslider();
-	
-	// ShortCode Ansicht
-	
-	$('.sc > div:nth-child(1)').addClass('sc-image');
-	$('.sc > div:nth-child(2)').addClass('sc-content');
-	 
-	// News Ansicht
-	$('.news-list-view > div:nth-child(even)').addClass('news-odd').removeClass('no-gutter-left').addClass('no-gutter-right');
-	$('.news-list-view > div:nth-child(even) div.date_box').removeClass('date_box').addClass('date_box_odd');
-	
-	
-	// Newsletter Focus on Blur
-	
-	var Input = $('input.nemail');
+	var Input = $('input.searchword');
     var default_value = Input.val();
 
     Input.focus(function() {
@@ -33,39 +19,44 @@ jQuery(document).ready(function($)  {
         if(Input.val().length == 0) Input.val(default_value);
     });
      
-     // Follow Page height Fix
-     heightl = $('.mainl').height();
-     heightr = $('.mainr').height();
+     // Fix Shortcode Height
+     var sc1 = $('.shortcodes_left').height();
+     var sc2 = $('.shortcodes_middle').height();
+     var sc3 = $('.shortcodes_right').height();
+     var max = sc1;
      
-     //$('body').prepend('Left:' + heightl + " Right: " + heightr);
-     $(window).resize( function() {
- 		resizeMain();
-     });
+    /*$(window).resize( function() {
+ 		resizeShortcodes();
+     });*/
      
-     resizeMain();
- 
- 	function resizeMain () {
- 		     if ($(window).width() > 995 ){
-			     if (heightl < heightr) {
-			     	$('.mainl').css('height', heightr );
-			     } else {
-			     	$('.mainr').css('height', heightl );
+     resizeShortcodes();
+ 	function resizeShortcodes () {
+
+ 		     if ($(window).width() > 959 ){
+			     if (sc2 > max) {
+					max = sc2;			     	
+			     }
+			     if (sc3 > max) {
+			     	max = sc3;
 			     }
 		     } else {
-		     	$('.mainl').css('height','auto');
-		     	$('.mainr').css('height','auto');
+		     	$('.shortcodes_left').height(max);
+		     	$('.shortcodes_middle').height(max);
+		     	$('.shortcodes_right').height(max);
 		     }
  	}
+ 	
+
 
     // Search Box
     
-    sword = '.searchbox-sword';
-    sbox = '.sword-border';
-    form = '.indexedsearch';
-    button = '.searchbox-button';
-    color = '#208ccc';
+    var sword = '.searchbox-sword';
+    var sbox = '.sword-border';
+    var form = '.indexedsearch';
+    var button = '.searchbox-button';
+    //var color = '#208ccc';
     
-    focus = false;
+    var focus = false;
    $(sbox).hide("slide", { direction: "right" }, 1);
    // sb_off();
     
@@ -104,13 +95,11 @@ jQuery(document).ready(function($)  {
      
      $(sword).focus( function()
      { 
-     	//$(this).addClass('focus');
      	focus = true;
      });
      
      $(sword).blur( function() {
      	focus = false;
-     	//$(this).removeClass('focus');
      	setTimeout(sb_off,1500);     	
      });
      
@@ -118,30 +107,26 @@ jQuery(document).ready(function($)  {
       * Fixed Menu Top 
       */
      
-        header = $(".menu");
-        slider = $(".slider-outer");
-        titlebar = $(".titlebar");
-        //y = 0;
-        
+        var header = $(".menu");
+        var slider = $(".slider");
+        var zirkel = $(".zirkel");
+        var titlebar = $(".titlebar");
+
+     checkScrollPosition();
        
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
-	    if (y >= 30  &&  $(window).width() >= 979 ) 
+	    if (y >= 40) //  &&  $(window).width() >= 959 ) 
 	    {	
-	        header.addClass('fixedmenu');
-	        slider.addClass('fixedslider');
-	        titlebar.addClass('fixedtitle');
+	        $('body').addClass('scrollfixed');
 	    } else {
-	    	
-	        header.removeClass('fixedmenu');
-	        slider.removeClass('fixedslider');
-	        titlebar.removeClass('fixedtitle');
+	        $('body').removeClass('scrollfixed');
 	    }
     }
 
      
     $(document).scroll( function() { checkScrollPosition(); });	
-    $(document).resize( function() { checkScrollPosition(); });	
+    //$(document).resize( function() { checkScrollPosition(); });	
      
      
      
