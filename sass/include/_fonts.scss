@@ -53,6 +53,16 @@ b {
   font-weight: bold;
 }
 
+.top a, .footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.top a:hover, .footer a:hover{
+	color: $lightgray2;
+	text-decoration: underline;
+}
+
 a {
   color: black;
   transition: all 0.3s;

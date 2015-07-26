@@ -2,7 +2,7 @@
 /* 
  * ----------------
  * Template: Germania 2015
- * Für meine liebe Germania 2015
+ * F├╝r meine liebe Germania 2015
  * Von : Marc Ernst
  * Firma : SkyIT Webdesign Darmstadt
  * Erstellt: 25.7.2015
@@ -10,7 +10,7 @@
  * Version 0.1.0
  * ----------------
  */
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,45 +32,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/marctools/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -453,7 +453,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   z-index: 0;
   padding: 40px 0;
-  min-height: 200px;
+  min-height: 500px;
   background: none;
 }
 
@@ -559,17 +559,29 @@ b {
 }
 
 /* line 56, ../sass/include/_fonts.scss */
+.top a, .footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 61, ../sass/include/_fonts.scss */
+.top a:hover, .footer a:hover {
+  color: #cccccc;
+  text-decoration: underline;
+}
+
+/* line 66, ../sass/include/_fonts.scss */
 a {
   color: black;
   transition: all 0.3s;
 }
 
-/* line 61, ../sass/include/_fonts.scss */
+/* line 71, ../sass/include/_fonts.scss */
 a:hover {
   color: #777777;
 }
 
-/* line 66, ../sass/include/_fonts.scss */
+/* line 76, ../sass/include/_fonts.scss */
 sub {
   font-size: 12px;
   position: relative;
@@ -591,7 +603,8 @@ ul.mainmenu li {
 /* line 15, ../sass/include/_mainmenu.scss */
 ul.mainmenu li a {
   margin: 25px 0;
-  padding: 0 20px;
+  letter-spacing: 2px;
+  padding: 0 10px;
   height: 50px;
   line-height: 50px;
   font-weight: bold;
@@ -599,9 +612,9 @@ ul.mainmenu li a {
   text-decoration: none;
   background-color: white;
   display: block;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
-/* line 28, ../sass/include/_mainmenu.scss */
+/* line 30, ../sass/include/_mainmenu.scss */
 ul.mainmenu li a:hover {
   background-color: #990036;
   color: white;
