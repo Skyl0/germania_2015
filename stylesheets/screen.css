@@ -7,7 +7,7 @@
  * Firma : SkyIT Webdesign Darmstadt
  * Erstellt: 25.7.2015
  * ----------------
- * Version 0.0.1
+ * Version 0.1.0
  * ----------------
  */
 /* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
@@ -280,7 +280,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .top {
   height: 40px;
   line-height: 40px;
-  background: #333333;
+  background: #555555;
   color: white;
   font-size: 14px;
 }
@@ -314,7 +314,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .footer {
   height: 40px;
   line-height: 40px;
-  background: #333333;
+  background: #555555;
   color: white;
   font-size: 14px;
 }
@@ -434,7 +434,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 155, ../sass/include/_layout.scss */
 .sc_item i {
   margin-bottom: 10px;
-  color: #666666;
+  color: #777777;
   font-size: 8em;
 }
 
@@ -566,7 +566,7 @@ a {
 
 /* line 61, ../sass/include/_fonts.scss */
 a:hover {
-  color: #666666;
+  color: #777777;
 }
 
 /* line 66, ../sass/include/_fonts.scss */
@@ -735,13 +735,13 @@ body.scrollfixed .footer {
 
 /* line 20, ../sass/include/_scrollup.scss */
 .scrollup a {
-  color: #333333;
+  color: #555555;
   transition: all 0.5s;
 }
 
 /* line 25, ../sass/include/_scrollup.scss */
 .scrollup a:hover {
-  color: #666666;
+  color: #777777;
 }
 
 /* line 30, ../sass/screen.scss */
