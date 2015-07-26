@@ -1,0 +1,27 @@
+/*
+ * SCROLL UP 
+ */
+
+.bottom .container, .content .container {
+  position: relative;
+}
+
+.scrollup {
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+}
+
+.scrollup i {
+  font-size: 5em;
+
+}
+
+.scrollup a {
+    color: $gray1;
+    transition: all 0.5s;
+}
+
+.scrollup a:hover {
+  color: $gray2;
+}

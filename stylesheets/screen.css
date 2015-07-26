@@ -645,7 +645,7 @@ ul.mainmenu li a:hover {
 /* line 35, ../sass/include/_slider.scss */
 .slider p {
   position: relative;
-  top: 60px;
+  top: 140px;
   left: 10px;
 }
 
@@ -713,7 +713,38 @@ body.scrollfixed .footer {
   top: 100px;
 }
 
-/* line 29, ../sass/screen.scss */
+/*
+ * SCROLL UP 
+ */
+/* line 5, ../sass/include/_scrollup.scss */
+.bottom .container, .content .container {
+  position: relative;
+}
+
+/* line 9, ../sass/include/_scrollup.scss */
+.scrollup {
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+}
+
+/* line 15, ../sass/include/_scrollup.scss */
+.scrollup i {
+  font-size: 5em;
+}
+
+/* line 20, ../sass/include/_scrollup.scss */
+.scrollup a {
+  color: #333333;
+  transition: all 0.5s;
+}
+
+/* line 25, ../sass/include/_scrollup.scss */
+.scrollup a:hover {
+  color: #666666;
+}
+
+/* line 30, ../sass/screen.scss */
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
   height: auto;

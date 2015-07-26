@@ -1,14 +1,43 @@
-/* Y7 group 2015
- * Im Auftrag von Indilex
- * (c) Alle Rechte vorbehalten
- * - ME 
+/* 
+ * ----------------
+ * Skript: Germania 2015
+ * Für meine liebe Germania 2015
+ * Von : Marc Ernst
+ * Firma : SkyIT Webdesign Darmstadt
+ * Erstellt: 26.7.2015
+ * ----------------
+ * Version 0.0.1
+ * ----------------
  */
 
 jQuery(document).ready(function($)  {
 	
-	// Slider
+	/*
+	 * fadeOut Slider Text while scrolling
+	 */
+	var slidertext = $('.slider p');
+	var start_at = 140;
+	var fade_px = 100;
+	var opacity = 1.0;
 	
-	// Search Focus on Blur
+	$(document).scroll( function() {
+		var yscroll = $(document).scrollTop();
+		if (yscroll <= start_at) {
+			opacity = 1.0;
+			slidertext.css('opacity',opacity);
+			//console.log("Erste If erreicht!");
+		} else {
+			opacity = (fade_px - (yscroll - start_at)) / fade_px ;
+			console.log("opacity" + opacity);
+			if ( opacity < 0 ) {opacity = 0.0;}
+			slidertext.css('opacity',opacity);
+		}
+	});
+	
+	
+	/*
+	 * Search Focus on Blur
+	 */ 
 	
 	var Input = $('input.searchword');
     var default_value = Input.val();
@@ -19,15 +48,15 @@ jQuery(document).ready(function($)  {
         if(Input.val().length == 0) Input.val(default_value);
     });
      
-     // Fix Shortcode Height
+     /*
+      * Fix Shortcode Height
+      */
+      
      var sc1 = $('.shortcodes_left').height();
      var sc2 = $('.shortcodes_middle').height();
      var sc3 = $('.shortcodes_right').height();
      var max = sc1;
      
-    /*$(window).resize( function() {
- 		resizeShortcodes();
-     });*/
      
      resizeShortcodes();
  	function resizeShortcodes () {
@@ -48,7 +77,9 @@ jQuery(document).ready(function($)  {
  	
 
 
-    // Search Box
+    /**
+     * Search Box
+     */ 
     
     var sword = '.searchbox-sword';
     var sbox = '.sword-border';
@@ -104,7 +135,7 @@ jQuery(document).ready(function($)  {
      });
      
      /**
-      * Fixed Menu Top 
+      * Fixedmenu
       */
      
         var header = $(".menu");
@@ -127,11 +158,10 @@ jQuery(document).ready(function($)  {
      
     $(document).scroll( function() { checkScrollPosition(); });	
     //$(document).resize( function() { checkScrollPosition(); });	
-     
-     
-     
-          
-	// Opacity Effekt
+
+	/*
+	 * Opacity Effekt ScrollUp Link
+	 */ 
 	$("#scrollup i").hover(
 		function() {
 			$('#scrollup i').fadeIn().addClass("opacity50");
@@ -146,7 +176,9 @@ jQuery(document).ready(function($)  {
 		$('.ulmenu').slideToggle("fast");
 	});
 		
-	// Scroll Up TODO Tobi wegen Funktion fragen
+	/**
+	 * Smooth Scrollup
+	 */
 	
 	$(function() {
 	  	$('a[href*=#]:not([href=#])').click(function() {
