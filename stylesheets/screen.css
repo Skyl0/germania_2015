@@ -1,8 +1,7 @@
-@charset "UTF-8";
 /* 
  * ----------------
  * Template: Germania 2015
- * F├╝r meine liebe Germania 2015
+ * Fuer meine liebe Germania 2015
  * Von : Marc Ernst
  * Firma : SkyIT Webdesign Darmstadt
  * Erstellt: 25.7.2015
@@ -262,6 +261,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 13, ../sass/include/_classes.scss */
 .tajustify {
   text-align: justify;
+}
+
+/* line 17, ../sass/include/_classes.scss */
+.hidden {
+  display: none;
 }
 
 /*
@@ -559,13 +563,13 @@ b {
 }
 
 /* line 56, ../sass/include/_fonts.scss */
-.top a, .footer a {
+.top a, .footer a, .titlebar a {
   color: white;
   text-decoration: none;
 }
 
 /* line 61, ../sass/include/_fonts.scss */
-.top a:hover, .footer a:hover {
+.top a:hover, .footer a:hover, .titlebar a:hover {
   color: #cccccc;
   text-decoration: underline;
 }
@@ -621,8 +625,13 @@ ul.mainmenu li a:hover {
 }
 
 /* line 2, ../sass/include/_othermenus.scss */
-.bottom_right ul li a, .bottom_middle ul li a {
+.bottom_right a, .bottom_middle a {
   line-height: 150%;
+}
+
+/* line 7, ../sass/include/_othermenus.scss */
+.bottom_middle a {
+  display: inline-block;
 }
 
 /**
@@ -730,20 +739,21 @@ body.scrollfixed .footer {
  * SCROLL UP 
  */
 /* line 5, ../sass/include/_scrollup.scss */
-.bottom .container, .content .container {
+.footer .container, .bottom .container, .content .container {
   position: relative;
 }
 
 /* line 9, ../sass/include/_scrollup.scss */
 .scrollup {
   position: absolute;
-  bottom: -30px;
-  right: 0px;
+  bottom: 40px;
+  right: 5px;
+  z-index: 100;
 }
 
-/* line 15, ../sass/include/_scrollup.scss */
+/* line 16, ../sass/include/_scrollup.scss */
 .scrollup i {
-  font-size: 5em;
+  font-size: 5em !important;
 }
 
 /* line 20, ../sass/include/_scrollup.scss */

@@ -13,6 +13,14 @@
 jQuery(document).ready(function($)  {
 	
 	/*
+	 * Footer Fix
+	 */
+	     
+     $('.bottom_middle a').each(function () {     	
+     	$(this).text(" " + $(this).text() + " "); 
+     });
+	
+	/*
 	 * fadeOut Slider Text while scrolling
 	 */
 	var slidertext = $('.slider p');

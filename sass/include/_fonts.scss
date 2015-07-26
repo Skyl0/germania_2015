@@ -53,12 +53,12 @@ b {
   font-weight: bold;
 }
 
-.top a, .footer a {
+.top a, .footer a, .titlebar a {
 	color: white;
 	text-decoration: none;
 }
 
-.top a:hover, .footer a:hover{
+.top a:hover, .footer a:hover, .titlebar a:hover {
 	color: $lightgray2;
 	text-decoration: underline;
 }

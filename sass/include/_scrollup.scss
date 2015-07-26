@@ -2,19 +2,19 @@
  * SCROLL UP 
  */
 
-.bottom .container, .content .container {
+.footer .container, .bottom .container, .content .container {
   position: relative;
 }
 
 .scrollup {
   position: absolute;
-  bottom: -30px;
-  right: 0px;
+  bottom: 40px;
+  right: 5px;
+  z-index: 100;
 }
 
 .scrollup i {
-  font-size: 5em;
-
+  font-size: 5em !important;
 }
 
 .scrollup a {
