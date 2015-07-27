@@ -11,7 +11,9 @@
  */
 
 jQuery(document).ready(function($)  {
+	// bxSlider
 	
+	$('.bxslider').bxSlider();
 	/*
 	 * Footer Fix
 	 */

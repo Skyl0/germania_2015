@@ -680,7 +680,7 @@ ul.mainmenu li a:hover {
   color: white;
   text-align: left !important;
 }
-/* line 9, ../sass/include/_slider.scss */
+/* line 10, ../sass/include/_slider.scss */
 .slider strong {
   padding: 10px;
   font-size: 36px;
@@ -688,408 +688,260 @@ ul.mainmenu li a:hover {
   border-bottom: 1px solid #cccccc;
   background-color: rgba(51, 51, 51, 0.75);
 }
-/* line 18, ../sass/include/_slider.scss */
+/* line 22, ../sass/include/_slider.scss */
 .slider span {
-  clear: both;
   padding: 10px;
   font-size: 18px;
   display: inline-block;
   width: auto;
   background-color: rgba(51, 51, 51, 0.75);
 }
-/* line 30, ../sass/include/_slider.scss */
+/* line 37, ../sass/include/_slider.scss */
 .slider a {
   color: white;
-}
-
-/* line 35, ../sass/include/_slider.scss */
-.slider p {
-  position: relative;
-  top: 140px;
-  left: 10px;
 }
 
 /** 
  *   Title Bar Effects
  */
-/* line 46, ../sass/include/_slider.scss */
+/* line 53, ../sass/include/_slider.scss */
 .titlebar h1 {
   padding: 10px;
   margin: 0 !important;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
-/* line 52, ../sass/include/_slider.scss */
+/* line 59, ../sass/include/_slider.scss */
 .titlebar p {
   padding: 10px;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
 
-/* line 59, ../sass/include/_slider.scss */
+/* line 66, ../sass/include/_slider.scss */
 .titlebar > div {
   position: relative;
   top: 20px;
 }
 
-/*
- * jQuery FlexSlider v2.5.0
- * http://www.woothemes.com/flexslider/
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
  *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 and later license.
- * http://www.gnu.org/licenses/gpl-2.0.html
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
  *
- * Contributing author: Tyler Smith (@mbmufffin)
- * 
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
  */
-/* ====================================================================================================================
- * FONT-FACE
- * ====================================================================================================================*/
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot");
-  font-weight: normal;
-  font-style: normal;
-}
-/* ====================================================================================================================
- * RESETS
- * ====================================================================================================================*/
-/* line 88, ../sass/include/_slider.scss */
-.flex-container a:hover,
-.flex-slider a:hover,
-.flex-container a:focus,
-.flex-slider a:focus {
-  outline: none;
+/** RESET AND LAYOUT
+===================================*/
+/* line 87, ../sass/include/_slider.scss */
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
 }
 
 /* line 94, ../sass/include/_slider.scss */
-.slides,
-.slides > li,
-.flex-control-nav,
-.flex-direction-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
 }
 
+/** THEME
+===================================*/
 /* line 102, ../sass/include/_slider.scss */
-.flex-pauseplay span {
-  text-transform: capitalize;
+.bx-wrapper .bx-viewport {
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 5px solid #fff;
+  left: -5px;
+  background: #fff;
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
 }
 
-/* ====================================================================================================================
- * BASE STYLES
- * ====================================================================================================================*/
-/* line 108, ../sass/include/_slider.scss */
-.flexslider {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 112, ../sass/include/_slider.scss */
-.flexslider .slides > li {
-  display: none;
-  -webkit-backface-visibility: hidden;
-}
-
-/* line 116, ../sass/include/_slider.scss */
-.flexslider .slides img {
+/* line 118, ../sass/include/_slider.scss */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
   width: 100%;
-  display: block;
 }
 
-/* line 120, ../sass/include/_slider.scss */
-.flexslider .slides:after {
-  content: "\0020";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+/* LOADER */
+/* line 127, ../sass/include/_slider.scss */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(images/bx_loader.gif) center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
 }
 
-/* line 128, ../sass/include/_slider.scss */
-html[xmlns] .flexslider .slides {
-  display: block;
-}
-
-/* line 131, ../sass/include/_slider.scss */
-* html .flexslider .slides {
-  height: 1%;
-}
-
-/* line 134, ../sass/include/_slider.scss */
-.no-js .flexslider .slides > li:first-child {
-  display: block;
-}
-
-/* ====================================================================================================================
- * DEFAULT THEME
- * ====================================================================================================================*/
+/* PAGER */
 /* line 140, ../sass/include/_slider.scss */
-.flexslider {
-  margin: 0 0 60px;
-  background: #ffffff;
-  border: 4px solid #ffffff;
-  position: relative;
-  zoom: 1;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* line 154, ../sass/include/_slider.scss */
-.flexslider .slides {
-  zoom: 1;
-}
-
-/* line 157, ../sass/include/_slider.scss */
-.flexslider .slides img {
-  height: auto;
-}
-
-/* line 160, ../sass/include/_slider.scss */
-.flex-viewport {
-  max-height: 2000px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-/* line 168, ../sass/include/_slider.scss */
-.loading .flex-viewport {
-  max-height: 300px;
-}
-
-/* line 171, ../sass/include/_slider.scss */
-.carousel li {
-  margin-right: 5px;
-}
-
-/* line 174, ../sass/include/_slider.scss */
-.flex-direction-nav {
-  *height: 0;
-}
-
-/* line 177, ../sass/include/_slider.scss */
-.flex-direction-nav a {
-  text-decoration: none;
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin: -20px 0 0;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  overflow: hidden;
-  opacity: 0;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-/* line 197, ../sass/include/_slider.scss */
-.flex-direction-nav a:before {
-  font-family: "flexslider-icon";
-  font-size: 40px;
-  display: inline-block;
-  content: '\f001';
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
-}
-
-/* line 205, ../sass/include/_slider.scss */
-.flex-direction-nav a.flex-next:before {
-  content: '\f002';
-}
-
-/* line 208, ../sass/include/_slider.scss */
-.flex-direction-nav .flex-prev {
-  left: -50px;
-}
-
-/* line 211, ../sass/include/_slider.scss */
-.flex-direction-nav .flex-next {
-  right: -50px;
-  text-align: right;
-}
-
-/* line 215, ../sass/include/_slider.scss */
-.flexslider:hover .flex-direction-nav .flex-prev {
-  opacity: 0.7;
-  left: 10px;
-}
-
-/* line 219, ../sass/include/_slider.scss */
-.flexslider:hover .flex-direction-nav .flex-prev:hover {
-  opacity: 1;
-}
-
-/* line 222, ../sass/include/_slider.scss */
-.flexslider:hover .flex-direction-nav .flex-next {
-  opacity: 0.7;
-  right: 10px;
-}
-
-/* line 226, ../sass/include/_slider.scss */
-.flexslider:hover .flex-direction-nav .flex-next:hover {
-  opacity: 1;
-}
-
-/* line 229, ../sass/include/_slider.scss */
-.flex-direction-nav .flex-disabled {
-  opacity: 0 !important;
-  filter: alpha(opacity=0);
-  cursor: default;
-}
-
-/* line 234, ../sass/include/_slider.scss */
-.flex-pauseplay a {
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
-  opacity: 0.8;
-  z-index: 10;
-  overflow: hidden;
-  cursor: pointer;
-  color: #000;
-}
-
-/* line 247, ../sass/include/_slider.scss */
-.flex-pauseplay a:before {
-  font-family: "flexslider-icon";
-  font-size: 20px;
-  display: inline-block;
-  content: '\f004';
-}
-
-/* line 253, ../sass/include/_slider.scss */
-.flex-pauseplay a:hover {
-  opacity: 1;
-}
-
-/* line 256, ../sass/include/_slider.scss */
-.flex-pauseplay a.flex-play:before {
-  content: '\f003';
-}
-
-/* line 259, ../sass/include/_slider.scss */
-.flex-control-nav {
-  width: 100%;
-  position: absolute;
-  bottom: -40px;
+.bx-wrapper .bx-pager {
   text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
 }
 
-/* line 265, ../sass/include/_slider.scss */
-.flex-control-nav li {
-  margin: 0 6px;
+/* line 149, ../sass/include/_slider.scss */
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
-  zoom: 1;
+  *zoom: 1;
   *display: inline;
 }
 
-/* line 271, ../sass/include/_slider.scss */
-.flex-control-paging li a {
-  width: 11px;
-  height: 11px;
-  display: block;
+/* line 156, ../sass/include/_slider.scss */
+.bx-wrapper .bx-pager.bx-default-pager a {
   background: #666;
-  background: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
   text-indent: -9999px;
-  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-}
-
-/* line 287, ../sass/include/_slider.scss */
-.flex-control-paging li a:hover {
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-/* line 291, ../sass/include/_slider.scss */
-.flex-control-paging li a.flex-active {
-  background: #000;
-  background: rgba(0, 0, 0, 0.9);
-  cursor: default;
-}
-
-/* line 296, ../sass/include/_slider.scss */
-.flex-control-thumbs {
-  margin: 5px 0 0;
-  position: static;
-  overflow: hidden;
-}
-
-/* line 301, ../sass/include/_slider.scss */
-.flex-control-thumbs li {
-  width: 25%;
-  float: left;
-  margin: 0;
-}
-
-/* line 306, ../sass/include/_slider.scss */
-.flex-control-thumbs img {
-  width: 100%;
-  height: auto;
   display: block;
-  opacity: .7;
-  cursor: pointer;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
-/* line 318, ../sass/include/_slider.scss */
-.flex-control-thumbs img:hover {
-  opacity: 1;
+/* line 169, ../sass/include/_slider.scss */
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #000;
 }
 
-/* line 321, ../sass/include/_slider.scss */
-.flex-control-thumbs .flex-active {
-  opacity: 1;
-  cursor: default;
+/* DIRECTION CONTROLS (NEXT / PREV) */
+/* line 176, ../sass/include/_slider.scss */
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url(images/controls.png) no-repeat 0 -32px;
 }
 
-/* ====================================================================================================================
- * RESPONSIVE
- * ====================================================================================================================*/
-@media screen and (max-width: 860px) {
-  /* line 329, ../sass/include/_slider.scss */
-  .flex-direction-nav .flex-prev {
-    opacity: 1;
-    left: 10px;
-  }
-
-  /* line 333, ../sass/include/_slider.scss */
-  .flex-direction-nav .flex-next {
-    opacity: 1;
-    right: 10px;
-  }
+/* line 181, ../sass/include/_slider.scss */
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url(images/controls.png) no-repeat -43px -32px;
 }
+
+/* line 186, ../sass/include/_slider.scss */
+.bx-wrapper .bx-prev:hover {
+  background-position: 0 0;
+}
+
+/* line 190, ../sass/include/_slider.scss */
+.bx-wrapper .bx-next:hover {
+  background-position: -43px 0;
+}
+
+/* line 194, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+/* line 205, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+/* line 211, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+
+/* line 215, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url(images/controls.png) -86px -11px no-repeat;
+  margin: 0 3px;
+}
+
+/* line 225, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+  background-position: -86px 0;
+}
+
+/* line 230, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url(images/controls.png) -86px -44px no-repeat;
+  margin: 0 3px;
+}
+
+/* line 240, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+  background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+/* line 247, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+
+/* line 252, ../sass/include/_slider.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+/* line 259, ../sass/include/_slider.scss */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666 \9;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+
+/* line 268, ../sass/include/_slider.scss */
+.bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+
 /**
  *   Fixed Menu and Slider
  */
