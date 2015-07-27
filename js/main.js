@@ -14,6 +14,10 @@ jQuery(document).ready(function($)  {
 	// bxSlider
 	
 	$('.bxslider').bxSlider();
+	
+	$('.bxslider img').unwrap().unwrap().unwrap().unwrap().unwrap();
+	$('.bxslider .csc-textpic-text').addClass('container');
+	//nötige Wraps entfernen.
 	/*
 	 * Footer Fix
 	 */
@@ -25,7 +29,7 @@ jQuery(document).ready(function($)  {
 	/*
 	 * fadeOut Slider Text while scrolling
 	 */
-	var slidertext = $('.slider p');
+	var slidertext = $('.sliderimg .container');
 	var start_at = 140;
 	var fade_px = 100;
 	var opacity = 1.0;
