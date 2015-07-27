@@ -265,7 +265,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 17, ../sass/include/_classes.scss */
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+/* line 21, ../sass/include/_classes.scss */
+.xtra-70px {
+  margin-bottom: 70px !important;
 }
 
 /*
@@ -362,10 +367,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px 0;
 }
 
+/** 
+ * 2 Spaltiges Layout
+ */
+/* line 88, ../sass/include/_layout.scss */
+.col2_left, .col2_right {
+  width: 47.5%;
+  float: left;
+}
+
+/* line 93, ../sass/include/_layout.scss */
+.col2_left {
+  padding-right: 2.5%;
+}
+
+/* line 97, ../sass/include/_layout.scss */
+.col2_right {
+  padding-left: 2.5%;
+}
+
 /**
  *   Slider Definitions
  */
-/* line 88, ../sass/include/_layout.scss */
+/* line 105, ../sass/include/_layout.scss */
 .slider {
   height: 500px;
   background: url("../images/Das_Haus_online.jpg") no-repeat center center;
@@ -375,7 +399,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /** 
  *   Zirkel Background
  */
-/* line 99, ../sass/include/_layout.scss */
+/* line 116, ../sass/include/_layout.scss */
 .zirkel {
   position: relative;
   display: block;
@@ -386,7 +410,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Titlebar Definitions
  */
-/* line 110, ../sass/include/_layout.scss */
+/* line 127, ../sass/include/_layout.scss */
 .titlebar {
   height: 200px;
   color: white;
@@ -397,36 +421,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Shortcode Definitions
  */
-/* line 120, ../sass/include/_layout.scss */
+/* line 137, ../sass/include/_layout.scss */
 .shortcodes {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
-/* line 126, ../sass/include/_layout.scss */
+/* line 143, ../sass/include/_layout.scss */
 .shortcodes > div {
   position: relative;
 }
 
-/* line 131, ../sass/include/_layout.scss */
+/* line 148, ../sass/include/_layout.scss */
 .shortcodes_left h1 {
   border-bottom: 2px solid black;
   margin: -5px 0 20px 0;
 }
 
-/* line 135, ../sass/include/_layout.scss */
+/* line 152, ../sass/include/_layout.scss */
 .shortcodes_middle h1 {
   border-bottom: 2px solid #990036;
   margin: -5px 0 20px 0;
 }
 
-/* line 140, ../sass/include/_layout.scss */
+/* line 157, ../sass/include/_layout.scss */
 .shortcodes_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: -5px 0 20px 0;
 }
 
-/* line 145, ../sass/include/_layout.scss */
+/* line 162, ../sass/include/_layout.scss */
 .sc_item {
   position: relative;
   z-index: 500;
@@ -435,14 +459,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   min-height: 350px;
 }
 
-/* line 155, ../sass/include/_layout.scss */
+/* line 172, ../sass/include/_layout.scss */
 .sc_item i {
   margin-bottom: 10px;
   color: #777777;
   font-size: 8em;
+  text-align: center;
 }
 
-/* line 161, ../sass/include/_layout.scss */
+/* line 179, ../sass/include/_layout.scss */
 .sc_item a {
   position: absolute;
   bottom: 10px;
@@ -452,7 +477,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Content Definitions
  */
-/* line 171, ../sass/include/_layout.scss */
+/* line 189, ../sass/include/_layout.scss */
 .content {
   position: relative;
   z-index: 0;
@@ -461,7 +486,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: none;
 }
 
-/* line 180, ../sass/include/_layout.scss */
+/* line 198, ../sass/include/_layout.scss */
 .content h1 {
   font-size: 28px;
   font-weight: bold;
@@ -470,37 +495,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Bottom Definitions
  */
-/* line 190, ../sass/include/_layout.scss */
+/* line 208, ../sass/include/_layout.scss */
 .bottom {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
-/* line 196, ../sass/include/_layout.scss */
+/* line 214, ../sass/include/_layout.scss */
 .bottom_left i.fa {
   width: 30px;
   font-size: 16px;
 }
 
-/* line 201, ../sass/include/_layout.scss */
+/* line 219, ../sass/include/_layout.scss */
 .bottom_left p {
   line-height: 20px;
   margin-bottom: 20px;
 }
 
-/* line 206, ../sass/include/_layout.scss */
+/* line 224, ../sass/include/_layout.scss */
 .bottom_left h1 {
   border-bottom: 2px solid black;
   margin: 0 0 20px 0;
 }
 
-/* line 210, ../sass/include/_layout.scss */
+/* line 228, ../sass/include/_layout.scss */
 .bottom_middle h1 {
   border-bottom: 2px solid #990036;
   margin: 0 0 20px 0;
 }
 
-/* line 215, ../sass/include/_layout.scss */
+/* line 233, ../sass/include/_layout.scss */
 .bottom_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: 0 0 20px 0;
@@ -634,6 +659,19 @@ ul.mainmenu li a:hover {
   display: inline-block;
 }
 
+/* line 20, ../sass/include/_othermenus.scss */
+.content_left ul li a {
+  padding: 10px 0 5px 0;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+  border-bottom: 2px solid #555555;
+}
+/* line 28, ../sass/include/_othermenus.scss */
+.content_left ul li a:hover {
+  border-bottom: 2px solid #990036;
+}
+
 /**
  *   SLIDER OWN DEFINITIONS
  */
@@ -694,6 +732,364 @@ ul.mainmenu li a:hover {
   top: 20px;
 }
 
+/*
+ * jQuery FlexSlider v2.5.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ * 
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+/* line 88, ../sass/include/_slider.scss */
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
+  outline: none;
+}
+
+/* line 94, ../sass/include/_slider.scss */
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 102, ../sass/include/_slider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+/* line 108, ../sass/include/_slider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 112, ../sass/include/_slider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 116, ../sass/include/_slider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 120, ../sass/include/_slider.scss */
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 128, ../sass/include/_slider.scss */
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+/* line 131, ../sass/include/_slider.scss */
+* html .flexslider .slides {
+  height: 1%;
+}
+
+/* line 134, ../sass/include/_slider.scss */
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+/* line 140, ../sass/include/_slider.scss */
+.flexslider {
+  margin: 0 0 60px;
+  background: #ffffff;
+  border: 4px solid #ffffff;
+  position: relative;
+  zoom: 1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: "" 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* line 154, ../sass/include/_slider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 157, ../sass/include/_slider.scss */
+.flexslider .slides img {
+  height: auto;
+}
+
+/* line 160, ../sass/include/_slider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 168, ../sass/include/_slider.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 171, ../sass/include/_slider.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* line 174, ../sass/include/_slider.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 177, ../sass/include/_slider.scss */
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 197, ../sass/include/_slider.scss */
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* line 205, ../sass/include/_slider.scss */
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+
+/* line 208, ../sass/include/_slider.scss */
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+/* line 211, ../sass/include/_slider.scss */
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+
+/* line 215, ../sass/include/_slider.scss */
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+/* line 219, ../sass/include/_slider.scss */
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 222, ../sass/include/_slider.scss */
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+/* line 226, ../sass/include/_slider.scss */
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+
+/* line 229, ../sass/include/_slider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+
+/* line 234, ../sass/include/_slider.scss */
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+/* line 247, ../sass/include/_slider.scss */
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+
+/* line 253, ../sass/include/_slider.scss */
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+/* line 256, ../sass/include/_slider.scss */
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+
+/* line 259, ../sass/include/_slider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+
+/* line 265, ../sass/include/_slider.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 271, ../sass/include/_slider.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/* line 287, ../sass/include/_slider.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* line 291, ../sass/include/_slider.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* line 296, ../sass/include/_slider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 301, ../sass/include/_slider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 306, ../sass/include/_slider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 318, ../sass/include/_slider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+/* line 321, ../sass/include/_slider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  /* line 329, ../sass/include/_slider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+
+  /* line 333, ../sass/include/_slider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
 /**
  *   Fixed Menu and Slider
  */

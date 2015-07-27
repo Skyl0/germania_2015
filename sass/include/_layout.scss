@@ -81,6 +81,23 @@
   padding: 10px 0;
 }
 
+/** 
+ * 2 Spaltiges Layout
+ */
+ 
+ .col2_left, .col2_right {
+	width: 47.5%;
+	float: left;
+ }
+ 
+ .col2_left {
+	padding-right: 2.5%;
+ }
+ 
+  .col2_right {
+	padding-left: 2.5%;
+ }
+
 /**
  *   Slider Definitions
  */
@@ -156,6 +173,7 @@
   margin-bottom: 10px;
   color: $gray2;
   font-size: 8em;
+  text-align: center;
 }
 
 .sc_item a {

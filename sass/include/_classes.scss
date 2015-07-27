@@ -15,5 +15,9 @@
 }
 
 .hidden {
-display: none;
+display: none !important;
+}
+
+.xtra-70px {
+	margin-bottom: 70px !important;
 }
