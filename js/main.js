@@ -12,11 +12,31 @@
 
 jQuery(document).ready(function($)  {
 	// bxSlider
-	
-	$('.bxslider').bxSlider();
+		
+	var bxslider = $('.bxslider').bxSlider();
+	var slider = $('.slider'),
+		img = $('.sliderimg img');
+		
+
+	function resizeImage() {
+		//console.log("Height img" + img.height());
+		if (slider.height() > img.height() ) {
+			img.addClass('scaleheight');
+			//$('.sliderimg img').each().addClass('scaleheight');
+		} else {
+			img.removeClass('scaleheight');
+			$('.sliderimg img').each().removeClass('scaleheight');
+		}
+		bxslider.destroySlider();
+		bxslider.bxSlider();
+	}
 	
 	$('.bxslider img').unwrap().unwrap().unwrap().unwrap().unwrap();
 	$('.bxslider .csc-textpic-text').addClass('container');
+	
+	resizeImage();
+	
+	$(window).resize(resizeImage);
 	//nötige Wraps entfernen.
 	/*
 	 * Footer Fix
@@ -42,7 +62,7 @@ jQuery(document).ready(function($)  {
 			//console.log("Erste If erreicht!");
 		} else {
 			opacity = (fade_px - (yscroll - start_at)) / fade_px ;
-			console.log("opacity" + opacity);
+			//console.log("opacity" + opacity);
 			if ( opacity < 0 ) {opacity = 0.0;}
 			slidertext.css('opacity',opacity);
 		}

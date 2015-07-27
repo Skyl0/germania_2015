@@ -703,24 +703,32 @@ ul.mainmenu li a:hover {
   color: white;
 }
 
+/**
+ * Height Fix
+ */
+/* line 41, ../sass/include/_slider.scss */
+img.scaleheight {
+  width: auto !important;
+}
+
 /** 
  *   Title Bar Effects
  */
-/* line 44, ../sass/include/_slider.scss */
+/* line 51, ../sass/include/_slider.scss */
 .titlebar h1 {
   padding: 10px;
   margin: 0 !important;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
-/* line 50, ../sass/include/_slider.scss */
+/* line 57, ../sass/include/_slider.scss */
 .titlebar p {
   padding: 10px;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
 
-/* line 57, ../sass/include/_slider.scss */
+/* line 64, ../sass/include/_slider.scss */
 .titlebar > div {
   position: relative;
   top: 20px;
@@ -739,7 +747,7 @@ ul.mainmenu li a:hover {
  */
 /** RESET AND LAYOUT
 ===================================*/
-/* line 78, ../sass/include/_slider.scss */
+/* line 85, ../sass/include/_slider.scss */
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
@@ -749,7 +757,7 @@ ul.mainmenu li a:hover {
   max-width: 100%;
 }
 
-/* line 87, ../sass/include/_slider.scss */
+/* line 94, ../sass/include/_slider.scss */
 .sliderimg img {
   width: 100%;
   height: auto;
@@ -757,14 +765,14 @@ ul.mainmenu li a:hover {
   position: absolute !important;
 }
 
-/* line 95, ../sass/include/_slider.scss */
+/* line 102, ../sass/include/_slider.scss */
 .sliderimg .csc-textpic-text {
   position: relative;
   top: 100px;
   left: 10px;
 }
 
-/* line 101, ../sass/include/_slider.scss */
+/* line 108, ../sass/include/_slider.scss */
 .sliderimg {
   height: 100%;
   width: 100%;
@@ -772,7 +780,7 @@ ul.mainmenu li a:hover {
 
 /** THEME
 ===================================*/
-/* line 109, ../sass/include/_slider.scss */
+/* line 116, ../sass/include/_slider.scss */
 .bx-wrapper .bx-viewport {
   background: #fff;
   height: 500px !important;
@@ -784,7 +792,7 @@ ul.mainmenu li a:hover {
   transform: translatez(0);
 }
 
-/* line 126, ../sass/include/_slider.scss */
+/* line 133, ../sass/include/_slider.scss */
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
@@ -793,7 +801,7 @@ ul.mainmenu li a:hover {
 }
 
 /* LOADER */
-/* line 135, ../sass/include/_slider.scss */
+/* line 142, ../sass/include/_slider.scss */
 .bx-wrapper .bx-loading {
   min-height: 50px;
   background: url(images/bx_loader.gif) center center no-repeat #fff;
@@ -806,7 +814,7 @@ ul.mainmenu li a:hover {
 }
 
 /* PAGER */
-/* line 148, ../sass/include/_slider.scss */
+/* line 155, ../sass/include/_slider.scss */
 .bx-wrapper .bx-pager {
   text-align: center;
   font-size: .85em;
@@ -816,7 +824,7 @@ ul.mainmenu li a:hover {
   padding-top: 20px;
 }
 
-/* line 157, ../sass/include/_slider.scss */
+/* line 164, ../sass/include/_slider.scss */
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
@@ -824,7 +832,7 @@ ul.mainmenu li a:hover {
   *display: inline;
 }
 
-/* line 164, ../sass/include/_slider.scss */
+/* line 171, ../sass/include/_slider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a {
   background: #666;
   text-indent: -9999px;
@@ -839,7 +847,7 @@ ul.mainmenu li a:hover {
   border-radius: 8px;
 }
 
-/* line 178, ../sass/include/_slider.scss */
+/* line 185, ../sass/include/_slider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #000;
@@ -847,29 +855,29 @@ ul.mainmenu li a:hover {
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
-/* line 186, ../sass/include/_slider.scss */
+/* line 193, ../sass/include/_slider.scss */
 .bx-wrapper .bx-prev {
   left: 10px;
   background: url(images/controls.png) no-repeat 0 -32px;
 }
 
-/* line 191, ../sass/include/_slider.scss */
+/* line 198, ../sass/include/_slider.scss */
 .bx-wrapper .bx-next {
   right: 10px;
   background: url(images/controls.png) no-repeat -43px -32px;
 }
 
-/* line 196, ../sass/include/_slider.scss */
+/* line 203, ../sass/include/_slider.scss */
 .bx-wrapper .bx-prev:hover {
   background-position: 0 0;
 }
 
-/* line 200, ../sass/include/_slider.scss */
+/* line 207, ../sass/include/_slider.scss */
 .bx-wrapper .bx-next:hover {
   background-position: -43px 0;
 }
 
-/* line 204, ../sass/include/_slider.scss */
+/* line 211, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 50%;
@@ -881,18 +889,18 @@ ul.mainmenu li a:hover {
   z-index: 9999;
 }
 
-/* line 215, ../sass/include/_slider.scss */
+/* line 222, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
 }
 
 /* AUTO CONTROLS (START / STOP) */
-/* line 221, ../sass/include/_slider.scss */
+/* line 228, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto {
   text-align: center;
 }
 
-/* line 225, ../sass/include/_slider.scss */
+/* line 232, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto .bx-start {
   display: block;
   text-indent: -9999px;
@@ -903,13 +911,13 @@ ul.mainmenu li a:hover {
   margin: 0 3px;
 }
 
-/* line 235, ../sass/include/_slider.scss */
+/* line 242, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto .bx-start:hover,
 .bx-wrapper .bx-controls-auto .bx-start.active {
   background-position: -86px 0;
 }
 
-/* line 240, ../sass/include/_slider.scss */
+/* line 247, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop {
   display: block;
   text-indent: -9999px;
@@ -920,27 +928,27 @@ ul.mainmenu li a:hover {
   margin: 0 3px;
 }
 
-/* line 250, ../sass/include/_slider.scss */
+/* line 257, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .bx-wrapper .bx-controls-auto .bx-stop.active {
   background-position: -86px -33px;
 }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-/* line 257, ../sass/include/_slider.scss */
+/* line 264, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
   text-align: left;
   width: 80%;
 }
 
-/* line 262, ../sass/include/_slider.scss */
+/* line 269, ../sass/include/_slider.scss */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
   right: 0;
   width: 35px;
 }
 
 /* IMAGE CAPTIONS */
-/* line 269, ../sass/include/_slider.scss */
+/* line 276, ../sass/include/_slider.scss */
 .bx-wrapper .bx-caption {
   position: absolute;
   bottom: 0;
@@ -950,7 +958,7 @@ ul.mainmenu li a:hover {
   width: 100%;
 }
 
-/* line 278, ../sass/include/_slider.scss */
+/* line 285, ../sass/include/_slider.scss */
 .bx-wrapper .bx-caption span {
   color: #fff;
   font-family: Arial;

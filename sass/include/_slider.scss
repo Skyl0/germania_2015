@@ -34,7 +34,14 @@
     color: white;
   }
 }
-
+/**
+ * Height Fix
+ */
+ 
+ img.scaleheight {
+	//height: 100% !important;
+	width: auto !important;
+ }
 
 /** 
  *   Title Bar Effects
