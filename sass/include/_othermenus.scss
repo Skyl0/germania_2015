@@ -17,12 +17,16 @@
   		//display: block;
   	}
   	
+  	 li.sidecurrent a {
+      border-bottom: 2px solid $gold;
+    }
+  	
   	ul li a {
   		padding: 10px 0 5px 0 ;
   		font-size: 18px;
   		display:block;
   		text-decoration: none;
-  		border-bottom: 2px solid $gray1;
+  		border-bottom: 2px solid $schwarz;
   	}
   	
   	ul li a:hover {
@@ -35,18 +39,27 @@
   .content_left{
    
      ul  {
+       position: relative;
+       top: -10px;
+       display: block;
+     //  margin-bottom: 10px;
        text-align: center;
       // list-style-type: none;
-      display: inline-block;
+     // display: inline-block;
+    }
+    
+     li.sidecurrent a {
+      border-bottom: 2px solid $gold;
     }
     
     ul li a {
       float: left;
-      padding: 10px 0 5px 0 ;
+      padding: 10px 0 5px 0;
+      margin-right: 10px;
       font-size: 16px;
       display: block;
       text-decoration: none;
-      border-bottom: 2px solid $gray1;
+      border-bottom: 2px solid $schwarz;
     }
     
     ul li a:hover {

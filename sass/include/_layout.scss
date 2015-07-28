@@ -163,6 +163,32 @@ span.hide-phone  {
     background: url('../images/Das_Haus_online.jpg') no-repeat center center;
     background-size: cover;
 }
+/** 
+ *   Title Bar Effects
+ */
+
+.titlebar {
+  h1 {
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    margin: 0 !important;
+    display: inline-block;
+    background-color: rgba(51,51,51,0.75);
+  }
+  p {
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(51,51,51,0.75);
+  }
+}
+
+.titlebar > div {
+  position: relative;
+ // top: 20px;
+}
+
 /**
  *   Shortcode Definitions
  */

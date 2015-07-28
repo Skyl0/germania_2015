@@ -217,8 +217,16 @@ jQuery(document).ready(function($)  {
 	});
 	
 	/**
-	 * Slides Parallax 0 
+	 * Menu Fix
 	 */
+	
+	$(window).resize(function() {
+		if ($(window).width() >= 960) {
+			$('ul.mainmenu').fadeIn('fast');
+		} else {
+			$('ul.mainmenu').hide();
+		}
+	});
 
 	// bxSlider
 	console.log('Vor Slider');
