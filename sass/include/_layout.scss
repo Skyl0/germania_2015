@@ -3,7 +3,12 @@
  */
 
 .container {
+ @include breakpoint(desktop) {
   width: 960px;
+  }
+  @include breakpoint(phone) {
+	width: 100%;
+  }
   margin: 0 auto;
 }
 
@@ -16,6 +21,7 @@
   background: $gray1;
   color: white;
   font-size: $small;
+  @include breakpoint (phone) {display: none;}
 }
 
 .top a , .footer a {
@@ -45,7 +51,10 @@
   line-height: $topfooterheight;
   background: $gray1;
   color: white;
-  font-size: $small;
+  @include breakpoint (desktop) {
+  font-size: $small; }
+  @include breakpoint (phone) {
+  font-size: $smaller;}
 }
 
 .footer i.fa {
@@ -84,20 +93,20 @@
 /** 
  * 2 Spaltiges Layout
  */
- 
- .col2_left, .col2_right {
-	width: 47.5%;
-	float: left;
- }
- 
- .col2_left {
-	padding-right: 2.5%;
- }
- 
-  .col2_right {
-	padding-left: 2.5%;
- }
-
+ @include breakpoint (desktop) {
+	 .col2_left, .col2_right {
+		width: 47.5%;
+		float: left;
+	 }
+	 
+	 .col2_left {
+		padding-right: 2.5%;
+	 }
+	 
+	  .col2_right {
+		padding-left: 2.5%;
+	 }
+}
 /**
  *   Slider Definitions
  */
@@ -167,6 +176,9 @@
   padding: 15px;
   background-color: rgba(255,255,255,0.8);
   min-height: 350px; // TODO Fix per Javascript
+  @include breakpoint (phone) {
+	margin-bottom: $stdmargin;
+  }
 }
 
 .sc_item i {
@@ -209,6 +221,15 @@
   padding: 40px 0;
  // height: $shortcodesheight;
   background: rgba(155,155,155,0.5); // Was lightgray 
+  @include breakpoint (phone) {
+	margin-bottom: $stdmargin;
+  }
+}
+
+.bottom_left, .bottom_middle, .bottom_right {
+	@include breakpoint (phone) {
+	margin-bottom: $stdmargin;
+	}
 }
 
 .bottom_left i.fa {

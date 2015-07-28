@@ -15,6 +15,7 @@
 
 @import "include/variables";
 @import "include/classes";
+@import "include/mediaqueries";
 
 @import "include/shadows";
 
@@ -25,6 +26,7 @@
 @import "include/slider";
 @import "include/fixedelements";
 @import "include/scrollup";
+
 
 
 html, body {
@@ -43,7 +45,7 @@ $settings : (
 
 @include gridle_register_state ( mobile , (
   max-width : 959px,
-  gutter-width : 0px
+  gutter-width : 20px
 ) );
 
 // clear each classes :
