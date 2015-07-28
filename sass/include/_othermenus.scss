@@ -10,22 +10,47 @@
 }
 
 // Sidemenu
+ @include breakpoint(desktop) {
+  .content_left{
+  
+  	 ul li {
+  		//display: block;
+  	}
+  	
+  	ul li a {
+  		padding: 10px 0 5px 0 ;
+  		font-size: 18px;
+  		display:block;
+  		text-decoration: none;
+  		border-bottom: 2px solid $gray1;
+  	}
+  	
+  	ul li a:hover {
+  		border-bottom: 2px solid $weinrot;
+  	}
+  }
+}
 
-.content_left{
-
-	 ul li {
-		//display: block;
-	}
-	
-	ul li a {
-		padding: 10px 0 5px 0 ;
-		font-size: 18px;
-		display:block;
-		text-decoration: none;
-		border-bottom: 2px solid $gray1;
-	}
-	
-	ul li a:hover {
-		border-bottom: 2px solid $weinrot;
-	}
+ @include breakpoint(phone) {
+  .content_left{
+   
+     ul  {
+       text-align: center;
+      // list-style-type: none;
+      display: inline-block;
+    }
+    
+    ul li a {
+      float: left;
+      padding: 10px 0 5px 0 ;
+      font-size: 16px;
+      display: block;
+      text-decoration: none;
+      border-bottom: 2px solid $gray1;
+    }
+    
+    ul li a:hover {
+      border-bottom: 2px solid $weinrot;
+    }
+  }
 }

@@ -52,9 +52,21 @@
   background: $gray1;
   color: white;
   @include breakpoint (desktop) {
-  font-size: $small; }
+    height: $topfooterheight;
+    line-height: $topfooterheight;
+    font-size: $small; 
+  }
   @include breakpoint (phone) {
-  font-size: $smaller;}
+    height: $topfooterheight * 2;
+    line-height: $topfooterheight;
+    font-size: $smaller;
+  }
+}
+
+span.hide-phone  {
+  @media screen and (max-width: 470px) {
+    display:none;
+  }
 }
 
 .footer i.fa {
@@ -67,7 +79,7 @@
 }
 
 .footer_right {
-  text-align: right;
+   @include breakpoint(desktop) { text-align: right; }
 }
 
 /**
@@ -88,6 +100,11 @@
   width: 235px;
   height: 80px;
   padding: 10px 0;
+   @media screen and (max-width: 350px) {
+     width: 188px;
+     height: 64px;
+     padding: 18px 0;
+   }
 }
 
 /** 
@@ -107,12 +124,19 @@
 		padding-left: 2.5%;
 	 }
 }
+
+ @include breakpoint(phone) {
+   .col2_left {
+     margin-bottom: $stdmargin;
+   }
+ }
 /**
  *   Slider Definitions
  */
 
 .slider {
-  height: $sliderheight;
+     @include breakpoint(desktop) {height: $sliderheight;}
+    @include breakpoint(phone) {height: $slidermobile;}
   //background: $accent;
   background: url('../images/Das_Haus_online.jpg') no-repeat center center;
   background-size: cover;
@@ -127,7 +151,7 @@
  // top: $topfooterheight + $menuheight + $sliderheight;
   display: block;
   z-index: 1;
-  background: url('../images/zirkel_trans20.png') no-repeat top right;
+  background: url('../images/zirkel_trans10.png') no-repeat top right;
 }
 
 /**
@@ -175,11 +199,23 @@
  z-index: 500;
   padding: 15px;
   background-color: rgba(255,255,255,0.8);
-  min-height: 350px; // TODO Fix per Javascript
+  //min-height: 350px; // TODO Fix per Javascript
   @include breakpoint (phone) {
 	margin-bottom: $stdmargin;
   }
 }
+
+@include breakpoint(desktop) {
+  .sc_item p.bodytext {
+    margin-bottom: $stdmargin * 2;
+  } 
+ }
+
+ @include breakpoint(phone) {
+  .sc_item p.bodytext {
+    margin-bottom: $stdmargin * 2;
+  } 
+ }
 
 .sc_item i {
   margin-bottom: 10px;
@@ -221,9 +257,7 @@
   padding: 40px 0;
  // height: $shortcodesheight;
   background: rgba(155,155,155,0.5); // Was lightgray 
-  @include breakpoint (phone) {
-	margin-bottom: $stdmargin;
-  }
+ 
 }
 
 .bottom_left, .bottom_middle, .bottom_right {

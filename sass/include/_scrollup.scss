@@ -8,7 +8,8 @@
 
 .scrollup {
   position: absolute;
-  bottom: 40px;
+  @include breakpoint(desktop) {  bottom: 40px; }
+  @include breakpoint(phone) { bottom: 80px; }
   right: 5px;
   z-index: 100;
 }

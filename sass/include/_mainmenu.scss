@@ -3,12 +3,17 @@
  */
 ul.mainmenu {
   list-style-type: none;
-  
 }
 
 .burger {
+   @include breakpoint(desktop) { display: none; }
+    @include breakpoint(phone) { display: inline-block; }
+  position: absolute;
+  top: 20px;
+  left: 20px;
 	height: 32px;
 	width: 32px;
+	margin: 10px;
 	div {
 		height: 2px;
 		background-color: $gray1;
@@ -16,11 +21,11 @@ ul.mainmenu {
 	}
 }
 
-
-ul.mainmenu {
   @include breakpoint (desktop) {
+ul.mainmenu {
+    display: block;
 	  li {
-		display: inline-block;
+		  display: inline-block;
 	  }
 	  
 	  li a {
@@ -43,13 +48,37 @@ ul.mainmenu {
 		color: white;
 	  }
   }
-  
-  @include breakpoint (phone) {
-	li a {
-		width: 100%;
-		background-color: $gray2;
-		display: block;
-		margin: 0 -10px;
-	}
+ }
+ 
+ @include breakpoint (phone) {
+ ul.mainmenu { 
+   width: 100%;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    z-index: 100;
+    
+    li {
+     // width: 100%;
+      display: block;
+    }
+  	li a {
+  	  border-top: 1px solid $gray2;
+  	  text-decoration: none;
+  	  font-weight: bold;
+  //		width: 100%;
+  		background-color: $lightgray1;
+  		padding: 10px;
+  		display: block;
+  		transition: all 0.3s;
+  		//display: block;
+  		//margin: 0 -10px;
+  	}
+  	
+  	li a:hover {
+  	  background-color: $weinrot;
+  	  color: white;
+  	}
   }
 }

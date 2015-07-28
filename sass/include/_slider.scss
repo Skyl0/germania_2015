@@ -35,6 +35,14 @@
   }
 }
 /**
+ *   Mobile
+ */
+ @include breakpoint(phone) {
+  .sliderimg .container {
+   padding-right: $stdmargin;
+  }
+}
+/**
  * Height Fix
  */
  
@@ -87,7 +95,8 @@
 	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
-	height: $sliderheight;
+@include breakpoint(desktop) {height: $sliderheight !important;}
+    @include breakpoint(phone) {height: $slidermobile !important;}
 	max-width: 100%;
 }
 
@@ -120,8 +129,9 @@
 	//border:  5px solid #fff;
 	//left: -5px;
 	background: #fff;
-	height: $sliderheight !important;
-	
+	//height: $sliderheight !important;
+	  @include breakpoint(desktop) {height: $sliderheight !important;}
+    @include breakpoint(phone) {height: $slidermobile !important;}
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);
