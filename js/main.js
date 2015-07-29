@@ -191,11 +191,7 @@ jQuery(document).ready(function($)  {
 			$('#scrollup i').fadeIn().removeClass("opacity50");
 		}
 	);
-	
-	$('.burger').click(function(){
-		$('.mm').toggleClass("expanded");
-		$('.ulmenu').slideToggle("fast");
-	});
+
 		
 	/**
 	 * Smooth Scrollup
