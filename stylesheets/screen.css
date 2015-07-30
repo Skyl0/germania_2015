@@ -802,14 +802,9 @@ ul.mainmenu {
     background-color: #990036;
     color: white;
   }
-  /* line 51, ../sass/include/_mainmenu.scss */
-  ul.mainmenu .deepness3 li a {
-    font-size: 16px;
-    margin-left: 20px;
-  }
 }
 @media (max-width: 959px) {
-  /* line 59, ../sass/include/_mainmenu.scss */
+  /* line 55, ../sass/include/_mainmenu.scss */
   ul.mainmenu {
     width: 100%;
     display: none;
@@ -818,11 +813,11 @@ ul.mainmenu {
     left: 0px;
     z-index: 100;
   }
-  /* line 67, ../sass/include/_mainmenu.scss */
+  /* line 63, ../sass/include/_mainmenu.scss */
   ul.mainmenu li {
     display: block;
   }
-  /* line 71, ../sass/include/_mainmenu.scss */
+  /* line 67, ../sass/include/_mainmenu.scss */
   ul.mainmenu li a {
     border-top: 1px solid #777777;
     text-decoration: none;
@@ -833,7 +828,7 @@ ul.mainmenu {
     display: block;
     transition: all 0.3s;
   }
-  /* line 85, ../sass/include/_mainmenu.scss */
+  /* line 81, ../sass/include/_mainmenu.scss */
   ul.mainmenu li a:hover {
     background-color: #990036;
     color: white;
