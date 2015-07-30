@@ -163,12 +163,12 @@ jQuery(document).ready(function($)  {
         var slider = $(".slider");
         var zirkel = $(".zirkel");
         var titlebar = $(".titlebar");
-
+		var isTouchDevice = 'ontouchstart' in document.documentElement;
      checkScrollPosition();
        
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
-	    if (y >= 40) //  &&  $(window).width() >= 959 ) 
+	    if (y >= 40 && !isTouchDevice) //  &&  $(window).width() >= 959 ) 
 	    {	
 	        $('body').addClass('scrollfixed');
 	    } else {

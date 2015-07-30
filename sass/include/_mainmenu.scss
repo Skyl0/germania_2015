@@ -47,6 +47,11 @@ ul.mainmenu {
 		background-color: $weinrot;
 		color: white;
 	  }
+	  
+	  .deepness3 li a {
+	    font-size: 16px;
+	    margin-left: $stdmargin;
+	  }
   }
  }
  
@@ -66,10 +71,11 @@ ul.mainmenu {
   	li a {
   	  border-top: 1px solid $gray2;
   	  text-decoration: none;
-  	  font-weight: bold;
+  	  font-weight: normal;
   //		width: 100%;
   		background-color: $lightgray1;
-  		padding: 10px;
+  		padding: 12px 0 12px 30px;
+  		letter-spacing: 2px;
   		display: block;
   		transition: all 0.3s;
   		//display: block;

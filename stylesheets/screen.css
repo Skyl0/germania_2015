@@ -802,9 +802,14 @@ ul.mainmenu {
     background-color: #990036;
     color: white;
   }
+  /* line 51, ../sass/include/_mainmenu.scss */
+  ul.mainmenu .deepness3 li a {
+    font-size: 16px;
+    margin-left: 20px;
+  }
 }
 @media (max-width: 959px) {
-  /* line 54, ../sass/include/_mainmenu.scss */
+  /* line 59, ../sass/include/_mainmenu.scss */
   ul.mainmenu {
     width: 100%;
     display: none;
@@ -813,21 +818,22 @@ ul.mainmenu {
     left: 0px;
     z-index: 100;
   }
-  /* line 62, ../sass/include/_mainmenu.scss */
+  /* line 67, ../sass/include/_mainmenu.scss */
   ul.mainmenu li {
     display: block;
   }
-  /* line 66, ../sass/include/_mainmenu.scss */
+  /* line 71, ../sass/include/_mainmenu.scss */
   ul.mainmenu li a {
     border-top: 1px solid #777777;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     background-color: #aaaaaa;
-    padding: 10px;
+    padding: 12px 0 12px 30px;
+    letter-spacing: 2px;
     display: block;
     transition: all 0.3s;
   }
-  /* line 79, ../sass/include/_mainmenu.scss */
+  /* line 85, ../sass/include/_mainmenu.scss */
   ul.mainmenu li a:hover {
     background-color: #990036;
     color: white;
@@ -850,7 +856,7 @@ ul.mainmenu {
   }
   /* line 24, ../sass/include/_othermenus.scss */
   .content_left ul li a {
-    padding: 10px 0 5px 0;
+    padding: 10px 0 5px 10px;
     font-size: 18px;
     display: block;
     text-decoration: none;
@@ -860,20 +866,32 @@ ul.mainmenu {
   .content_left ul li a:hover {
     border-bottom: 2px solid #990036;
   }
+  /* line 36, ../sass/include/_othermenus.scss */
+  .content_left ul.deepness3 li a {
+    padding-left: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+    border-bottom: 1px solid black;
+  }
+  /* line 43, ../sass/include/_othermenus.scss */
+  .content_left ul.deepness3 li a:hover {
+    border-bottom: 1px solid #990036;
+  }
 }
 @media (max-width: 959px) {
-  /* line 41, ../sass/include/_othermenus.scss */
-  .content_left ul {
+  /* line 51, ../sass/include/_othermenus.scss */
+  .content_left > ul {
     position: relative;
-    top: -10px;
+    top: -20px;
     display: block;
     text-align: center;
   }
-  /* line 51, ../sass/include/_othermenus.scss */
+
+  /* line 64, ../sass/include/_othermenus.scss */
   .content_left li.sidecurrent a {
     border-bottom: 2px solid #e7a300;
   }
-  /* line 55, ../sass/include/_othermenus.scss */
+  /* line 68, ../sass/include/_othermenus.scss */
   .content_left ul li a {
     float: left;
     padding: 10px 0 5px 0;
@@ -883,9 +901,18 @@ ul.mainmenu {
     text-decoration: none;
     border-bottom: 2px solid black;
   }
-  /* line 65, ../sass/include/_othermenus.scss */
+  /* line 78, ../sass/include/_othermenus.scss */
   .content_left ul li a:hover {
     border-bottom: 2px solid #990036;
+  }
+  /* line 83, ../sass/include/_othermenus.scss */
+  .content_left ul.deepness3 li a {
+    font-size: 14px;
+    border-bottom: 1px solid black;
+  }
+  /* line 89, ../sass/include/_othermenus.scss */
+  .content_left ul.deepness3 li a:hover {
+    border-bottom: 1px solid #990036;
   }
 }
 /**
