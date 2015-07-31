@@ -273,6 +273,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 70px !important;
 }
 
+/* line 25, ../sass/include/_classes.scss */
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0px;
+}
+
+/* line 33, ../sass/include/_classes.scss */
+.stdmargin-bot {
+  margin-bottom: 20px;
+}
+
+/* line 36, ../sass/include/_classes.scss */
+.stdmargin-top {
+  margin-top: 20px;
+}
+
 /*
  * General Layout
  */
@@ -493,8 +512,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px;
   position: absolute;
   top: 50px;
-  right: 10px;
-  margin: 0 !important;
+  margin: 0 10px 0  0 !important;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
@@ -688,14 +706,14 @@ h2 {
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* line 46, ../sass/include/_fonts.scss */
 h3 {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* line 52, ../sass/include/_fonts.scss */
@@ -704,34 +722,48 @@ p {
 }
 
 /* line 56, ../sass/include/_fonts.scss */
+p.bodytext {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* line 61, ../sass/include/_fonts.scss */
+caption {
+  font-size: 14px;
+  text-align: center !important;
+  line-height: 21px;
+  margin-top: 5px;
+}
+
+/* line 68, ../sass/include/_fonts.scss */
 b {
   font-weight: bold;
 }
 
-/* line 60, ../sass/include/_fonts.scss */
+/* line 72, ../sass/include/_fonts.scss */
 .top a, .footer a, .titlebar a {
   color: white;
   text-decoration: none;
 }
 
-/* line 65, ../sass/include/_fonts.scss */
+/* line 77, ../sass/include/_fonts.scss */
 .top a:hover, .footer a:hover, .titlebar a:hover {
   color: #cccccc;
   text-decoration: underline;
 }
 
-/* line 70, ../sass/include/_fonts.scss */
+/* line 82, ../sass/include/_fonts.scss */
 a {
   color: black;
   transition: all 0.3s;
 }
 
-/* line 75, ../sass/include/_fonts.scss */
+/* line 87, ../sass/include/_fonts.scss */
 a:hover {
   color: #777777;
 }
 
-/* line 80, ../sass/include/_fonts.scss */
+/* line 92, ../sass/include/_fonts.scss */
 sub {
   font-size: 12px;
   position: relative;
@@ -1292,7 +1324,105 @@ body.scrollfixed .footer {
   color: #777777;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 3, ../sass/include/_lists.scss */
+.content_right ul {
+  list-style: outside none none;
+  padding: 10px;
+  background: #cccccc;
+}
+/* line 9, ../sass/include/_lists.scss */
+.content_right ul li {
+  position: relative;
+  left: 20px;
+  line-height: 20px;
+}
+/* line 15, ../sass/include/_lists.scss */
+.content_right ul li::before {
+  content: "\f0c8";
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #555555;
+  font-size: 12px;
+  position: relative;
+  bottom: 1px;
+  width: 1.5em;
+  margin-left: -1.5em;
+}
+
+/* line 3, ../sass/include/_forms.scss */
+.csc-mailform label em {
+  text-transform: none;
+  color: #990036;
+  font-size: 12px;
+  line-height: 14px;
+}
+/* line 10, ../sass/include/_forms.scss */
+.csc-mailform .csc-form-element {
+  margin: 0 0 10px 0;
+}
+/* line 14, ../sass/include/_forms.scss */
+.csc-mailform textarea, .csc-mailform input[type] {
+  border: 1px solid #990036;
+  padding: 5px;
+  font-size: 16px;
+}
+@media (min-width: 960px) {
+  /* line 14, ../sass/include/_forms.scss */
+  .csc-mailform textarea, .csc-mailform input[type] {
+    width: 65%;
+  }
+}
+@media (max-width: 959px) {
+  /* line 14, ../sass/include/_forms.scss */
+  .csc-mailform textarea, .csc-mailform input[type] {
+    width: 94%;
+  }
+}
+/* line 22, ../sass/include/_forms.scss */
+.csc-mailform input[type="submit"] {
+  position: relative;
+  background: #990036;
+  color: white;
+  font-family: "OpenSans", Arial, sans-serif;
+}
+@media (min-width: 960px) {
+  /* line 22, ../sass/include/_forms.scss */
+  .csc-mailform input[type="submit"] {
+    width: 300px;
+  }
+}
+@media (max-width: 959px) {
+  /* line 22, ../sass/include/_forms.scss */
+  .csc-mailform input[type="submit"] {
+    width: 94%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 22, ../sass/include/_forms.scss */
+  .csc-mailform input[type="submit"] {
+    left: 224px;
+  }
+}
+/* line 35, ../sass/include/_forms.scss */
+.csc-mailform label {
+  position: relative;
+}
+/* line 39, ../sass/include/_forms.scss */
+.csc-mailform strong {
+  display: inline-block;
+  padding: 8px;
+  background: #cccccc;
+  position: relative;
+  margin-bottom: 5px;
+  top: 3px;
+  color: #990036;
+  font-style: italic;
+  font-size: 12px;
+  text-transform: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* line 34, ../sass/screen.scss */
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
   height: auto;

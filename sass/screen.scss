@@ -26,12 +26,15 @@
 @import "include/slider";
 @import "include/fixedelements";
 @import "include/scrollup";
+@import "include/lists";
+@import "include/forms";
 
 
 
 html, body {
   font-family: "OpenSans", Arial, sans-serif;
   height: auto;
+ // background: $gray1;
 //  overflow-x: hidden;
 }
 
