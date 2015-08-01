@@ -17,9 +17,11 @@
     font-size: 16px;
      @include breakpoint(desktop) {width: 65%;}
       @include breakpoint(phone) {width: 94%;}
+      -webkit-appearance: none;
   }
   
   input[type="submit"] {
+    -webkit-appearance: none;
     @include breakpoint(desktop) { width: 300px; }
      @include breakpoint(phone) { width: 94%; }
     position: relative;

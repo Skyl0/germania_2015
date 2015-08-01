@@ -59,10 +59,12 @@ p.bodytext {
 }
 
 caption {
-  font-size: $small;
+  font-size: $small !important;
   text-align: center !important;
   line-height: $small * 1.5;  
   margin-top: 5px;
+  font-style: italic;
+  width: 100%;
 }
 
 b {

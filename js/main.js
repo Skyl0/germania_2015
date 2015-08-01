@@ -52,6 +52,15 @@ jQuery(document).ready(function($)  {
 		}
 	});
 	
+	 // Fix for Responsive Gallery
+     
+     
+     $('div.csc-textpic-imagecolumn').unwrap();
+     //.each(function () {
+     $('div.csc-textpic-imagecolumn').addClass('galleryfix');
+     //}
+     // End Fix
+	
 	
 	/*
 	 * Search Focus on Blur
@@ -144,6 +153,7 @@ jQuery(document).ready(function($)  {
      	   	
      	
      }
+    
      
      $(sword).focus( function()
      { 
@@ -217,7 +227,7 @@ jQuery(document).ready(function($)  {
 	 */
 	
 	$(window).resize(function() {
-		if ($(window).width() >= 960) {
+		if ($(window).width() >= 945) {
 			$('ul.mainmenu').fadeIn('fast');
 		} else {
 			$('ul.mainmenu').hide();
