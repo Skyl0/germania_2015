@@ -318,9 +318,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /**
+ *   Youtube iframe
+ */
+@media (min-width: 960px) {
+  /* line 18, ../sass/include/_layout.scss */
+  .content_right iframe, .content_right .inner_cbQuickGoogleMap {
+    width: 700px !important;
+    height: 450px !important;
+  }
+}
+@media (max-width: 959px) {
+  /* line 18, ../sass/include/_layout.scss */
+  .content_right iframe, .content_right .inner_cbQuickGoogleMap {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+/**
  *   Top Definitions
  */
-/* line 18, ../sass/include/_layout.scss */
+/* line 33, ../sass/include/_layout.scss */
 .top {
   height: 40px;
   line-height: 40px;
@@ -329,30 +347,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
 }
 @media (max-width: 959px) {
-  /* line 18, ../sass/include/_layout.scss */
+  /* line 33, ../sass/include/_layout.scss */
   .top {
     display: none;
   }
 }
 
-/* line 27, ../sass/include/_layout.scss */
+/* line 42, ../sass/include/_layout.scss */
 .top a, .footer a {
   text-decoration: underline;
   color: white;
 }
 
-/* line 32, ../sass/include/_layout.scss */
+/* line 47, ../sass/include/_layout.scss */
 .top i.fa {
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 5px;
 }
 
-/* line 37, ../sass/include/_layout.scss */
+/* line 52, ../sass/include/_layout.scss */
 .top span.phone {
   margin-right: 20px;
 }
 
-/* line 41, ../sass/include/_layout.scss */
+/* line 56, ../sass/include/_layout.scss */
 .top_right {
   text-align: right;
 }
@@ -360,7 +378,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Footer Definitions
  */
-/* line 49, ../sass/include/_layout.scss */
+/* line 64, ../sass/include/_layout.scss */
 .footer {
   height: 40px;
   line-height: 40px;
@@ -368,7 +386,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: white;
 }
 @media (min-width: 960px) {
-  /* line 49, ../sass/include/_layout.scss */
+  /* line 64, ../sass/include/_layout.scss */
   .footer {
     height: 40px;
     line-height: 40px;
@@ -376,7 +394,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media (max-width: 959px) {
-  /* line 49, ../sass/include/_layout.scss */
+  /* line 64, ../sass/include/_layout.scss */
   .footer {
     height: 80px;
     line-height: 40px;
@@ -385,25 +403,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media screen and (max-width: 470px) {
-  /* line 66, ../sass/include/_layout.scss */
+  /* line 81, ../sass/include/_layout.scss */
   span.hide-phone {
     display: none;
   }
 }
 
-/* line 72, ../sass/include/_layout.scss */
+/* line 87, ../sass/include/_layout.scss */
 .footer i.fa {
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 5px;
 }
 
-/* line 77, ../sass/include/_layout.scss */
+/* line 92, ../sass/include/_layout.scss */
 .footer_left, .footer_right {
   height: 40px;
 }
 
 @media (min-width: 960px) {
-  /* line 81, ../sass/include/_layout.scss */
+  /* line 96, ../sass/include/_layout.scss */
   .footer_right {
     text-align: right;
   }
@@ -412,18 +430,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Menu Definitions
  */
-/* line 88, ../sass/include/_layout.scss */
+/* line 103, ../sass/include/_layout.scss */
 .menu {
   height: 100px;
   background: white;
 }
 
-/* line 93, ../sass/include/_layout.scss */
+/* line 108, ../sass/include/_layout.scss */
 .menu_right {
   position: relative;
 }
 
-/* line 97, ../sass/include/_layout.scss */
+/* line 112, ../sass/include/_layout.scss */
 .menu_right img {
   position: absolute;
   right: 10px;
@@ -432,7 +450,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px 0;
 }
 @media screen and (max-width: 350px) {
-  /* line 97, ../sass/include/_layout.scss */
+  /* line 112, ../sass/include/_layout.scss */
   .menu_right img {
     width: 188px;
     height: 64px;
@@ -444,24 +462,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * 2 Spaltiges Layout
  */
 @media (min-width: 960px) {
-  /* line 114, ../sass/include/_layout.scss */
+  /* line 129, ../sass/include/_layout.scss */
   .col2_left, .col2_right {
     width: 47.5%;
     float: left;
   }
 
-  /* line 119, ../sass/include/_layout.scss */
+  /* line 134, ../sass/include/_layout.scss */
   .col2_left {
     padding-right: 2.5%;
   }
 
-  /* line 123, ../sass/include/_layout.scss */
+  /* line 138, ../sass/include/_layout.scss */
   .col2_right {
     padding-left: 2.5%;
   }
 }
 @media (max-width: 959px) {
-  /* line 129, ../sass/include/_layout.scss */
+  /* line 144, ../sass/include/_layout.scss */
   .col2_left {
     margin-bottom: 20px;
   }
@@ -469,19 +487,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Slider Definitions
  */
-/* line 137, ../sass/include/_layout.scss */
+/* line 152, ../sass/include/_layout.scss */
 .slider {
   background: url("../images/Das_Haus_online.jpg") no-repeat center center;
   background-size: cover;
 }
 @media (min-width: 960px) {
-  /* line 137, ../sass/include/_layout.scss */
+  /* line 152, ../sass/include/_layout.scss */
   .slider {
     height: 500px;
   }
 }
 @media (max-width: 959px) {
-  /* line 137, ../sass/include/_layout.scss */
+  /* line 152, ../sass/include/_layout.scss */
   .slider {
     height: 350px;
   }
@@ -490,7 +508,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /** 
  *   Zirkel Background
  */
-/* line 149, ../sass/include/_layout.scss */
+/* line 164, ../sass/include/_layout.scss */
 .zirkel {
   position: relative;
   display: block;
@@ -501,7 +519,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Titlebar Definitions
  */
-/* line 160, ../sass/include/_layout.scss */
+/* line 175, ../sass/include/_layout.scss */
 .titlebar {
   height: 200px;
   color: white;
@@ -512,7 +530,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /** 
  *   Title Bar Effects
  */
-/* line 171, ../sass/include/_layout.scss */
+/* line 186, ../sass/include/_layout.scss */
 .titlebar h1 {
   padding: 10px;
   position: absolute;
@@ -522,14 +540,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
-/* line 180, ../sass/include/_layout.scss */
+/* line 195, ../sass/include/_layout.scss */
 .titlebar p {
   padding: 10px;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
 
-/* line 187, ../sass/include/_layout.scss */
+/* line 202, ../sass/include/_layout.scss */
 .titlebar > div {
   position: relative;
 }
@@ -537,36 +555,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Shortcode Definitions
  */
-/* line 196, ../sass/include/_layout.scss */
+/* line 211, ../sass/include/_layout.scss */
 .shortcodes {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
-/* line 202, ../sass/include/_layout.scss */
+/* line 217, ../sass/include/_layout.scss */
 .shortcodes > div {
   position: relative;
 }
 
-/* line 207, ../sass/include/_layout.scss */
+/* line 222, ../sass/include/_layout.scss */
 .shortcodes_left h1 {
   border-bottom: 2px solid black;
   margin: -5px 0 20px 0;
 }
 
-/* line 211, ../sass/include/_layout.scss */
+/* line 226, ../sass/include/_layout.scss */
 .shortcodes_middle h1 {
   border-bottom: 2px solid #990036;
   margin: -5px 0 20px 0;
 }
 
-/* line 216, ../sass/include/_layout.scss */
+/* line 231, ../sass/include/_layout.scss */
 .shortcodes_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: -5px 0 20px 0;
 }
 
-/* line 221, ../sass/include/_layout.scss */
+/* line 236, ../sass/include/_layout.scss */
 .sc_item {
   position: relative;
   z-index: 500;
@@ -574,25 +592,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 959px) {
-  /* line 221, ../sass/include/_layout.scss */
+  /* line 236, ../sass/include/_layout.scss */
   .sc_item {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 960px) {
-  /* line 235, ../sass/include/_layout.scss */
+  /* line 250, ../sass/include/_layout.scss */
   .sc_item p.bodytext {
     margin-bottom: 40px;
   }
 }
 @media (max-width: 959px) {
-  /* line 241, ../sass/include/_layout.scss */
+  /* line 256, ../sass/include/_layout.scss */
   .sc_item p.bodytext {
     margin-bottom: 40px;
   }
 }
-/* line 246, ../sass/include/_layout.scss */
+/* line 261, ../sass/include/_layout.scss */
 .sc_item i {
   margin-bottom: 10px;
   color: #777777;
@@ -600,7 +618,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
 }
 
-/* line 253, ../sass/include/_layout.scss */
+/* line 268, ../sass/include/_layout.scss */
 .sc_item a {
   position: absolute;
   bottom: 10px;
@@ -610,7 +628,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Content Definitions
  */
-/* line 263, ../sass/include/_layout.scss */
+/* line 278, ../sass/include/_layout.scss */
 .content {
   position: relative;
   z-index: 0;
@@ -618,7 +636,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: none;
 }
 
-/* line 272, ../sass/include/_layout.scss */
+/* line 287, ../sass/include/_layout.scss */
 .content h1 {
   font-size: 28px;
   font-weight: bold;
@@ -627,44 +645,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Bottom Definitions
  */
-/* line 282, ../sass/include/_layout.scss */
+/* line 297, ../sass/include/_layout.scss */
 .bottom {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
 @media (max-width: 959px) {
-  /* line 289, ../sass/include/_layout.scss */
+  /* line 304, ../sass/include/_layout.scss */
   .bottom_left, .bottom_middle, .bottom_right {
     margin-bottom: 20px;
   }
 }
 
-/* line 295, ../sass/include/_layout.scss */
+/* line 310, ../sass/include/_layout.scss */
 .bottom_left i.fa {
   width: 30px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
-/* line 300, ../sass/include/_layout.scss */
+/* line 315, ../sass/include/_layout.scss */
 .bottom_left p {
   line-height: 20px;
   margin-bottom: 20px;
 }
 
-/* line 305, ../sass/include/_layout.scss */
+/* line 320, ../sass/include/_layout.scss */
 .bottom_left h1 {
   border-bottom: 2px solid black;
   margin: 0 0 20px 0;
 }
 
-/* line 309, ../sass/include/_layout.scss */
+/* line 324, ../sass/include/_layout.scss */
 .bottom_middle h1 {
   border-bottom: 2px solid #990036;
   margin: 0 0 20px 0;
 }
 
-/* line 314, ../sass/include/_layout.scss */
+/* line 329, ../sass/include/_layout.scss */
 .bottom_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: 0 0 20px 0;
@@ -694,19 +712,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   font-style: italic;
 }
-/* line 29, ../sass/include/_fonts.scss */
+/* line 33, ../sass/include/_fonts.scss */
 h1 {
   font-size: 26px;
   line-height: 36px;
   margin-bottom: 20px;
 }
 
-/* line 35, ../sass/include/_fonts.scss */
+/* line 39, ../sass/include/_fonts.scss */
 h1 a {
   text-decoration: none;
 }
 
-/* line 39, ../sass/include/_fonts.scss */
+/* line 43, ../sass/include/_fonts.scss */
 h2 {
   font-size: 20px;
   line-height: 30px;
@@ -714,25 +732,25 @@ h2 {
   margin: 20px 0;
 }
 
-/* line 46, ../sass/include/_fonts.scss */
+/* line 50, ../sass/include/_fonts.scss */
 h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 20px 0;
 }
 
-/* line 52, ../sass/include/_fonts.scss */
+/* line 56, ../sass/include/_fonts.scss */
 p {
   line-height: 150%;
 }
 
-/* line 56, ../sass/include/_fonts.scss */
+/* line 60, ../sass/include/_fonts.scss */
 p.bodytext {
   margin-bottom: 10px;
   font-size: 15px;
 }
 
-/* line 61, ../sass/include/_fonts.scss */
+/* line 66, ../sass/include/_fonts.scss */
 caption {
   font-size: 14px !important;
   text-align: center !important;
@@ -742,35 +760,35 @@ caption {
   width: 100%;
 }
 
-/* line 70, ../sass/include/_fonts.scss */
+/* line 75, ../sass/include/_fonts.scss */
 b {
   font-weight: bold;
 }
 
-/* line 74, ../sass/include/_fonts.scss */
+/* line 79, ../sass/include/_fonts.scss */
 .top a, .footer a, .titlebar a {
   color: white;
   text-decoration: none;
 }
 
-/* line 79, ../sass/include/_fonts.scss */
+/* line 84, ../sass/include/_fonts.scss */
 .top a:hover, .footer a:hover, .titlebar a:hover {
   color: #cccccc;
   text-decoration: underline;
 }
 
-/* line 84, ../sass/include/_fonts.scss */
+/* line 89, ../sass/include/_fonts.scss */
 a {
   color: black;
   transition: all 0.3s;
 }
 
-/* line 89, ../sass/include/_fonts.scss */
+/* line 94, ../sass/include/_fonts.scss */
 a:hover {
   color: #777777;
 }
 
-/* line 94, ../sass/include/_fonts.scss */
+/* line 99, ../sass/include/_fonts.scss */
 sub {
   font-size: 12px;
   position: relative;

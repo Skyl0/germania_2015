@@ -11,6 +11,21 @@
   }
   margin: 0 auto;
 }
+/**
+ *   Youtube iframe
+ */
+
+.content_right iframe, .content_right .inner_cbQuickGoogleMap {
+   @include breakpoint(desktop) {
+     width: 700px !important;
+     height: 450px !important;
+   }
+    @include breakpoint(phone) {
+      width: 100% !important;
+      height: auto;
+    }
+}
+
 
 /**
  *   Top Definitions
@@ -30,7 +45,7 @@
 }
 
 .top i.fa {
-  font-size: $regular;
+  font-size: $default;
   margin-right: 5px;
 }
 
@@ -70,7 +85,7 @@ span.hide-phone  {
 }
 
 .footer i.fa {
-   font-size: $regular;
+   font-size: $default;
    margin-right: 5px;
 }
 
@@ -294,7 +309,7 @@ span.hide-phone  {
 
 .bottom_left i.fa {
   width: 30px;
-  font-size: $regular;
+  font-size: $default;
 }
 
 .bottom_left p {

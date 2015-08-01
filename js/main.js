@@ -22,6 +22,36 @@ jQuery(document).ready(function($)  {
 		menu.slideToggle();
 	});
 
+	/**
+	 * Youtube Iframe Respo Fix 
+	 */
+	
+	var iframe = $('.content_right iframe');
+	var gmaps = $('.inner_cbQuickGoogleMap');
+	
+	function resizeIframe() {
+		var gwidth = gmaps.width();
+		var iwidth = iframe.width();
+		var gheight = (gwidth / 4) * 3;
+		var iheight = (iwidth / 4) * 3;
+		gmaps.height(gheight);
+		iframe.height(iheight);
+	}
+	
+	/**
+	 * Menu Fix
+	 */
+	
+	$(window).resize(function() {
+		resizeIframe();
+		if ($(window).width() >= 945) {
+			$('ul.mainmenu').fadeIn('fast');
+		} else {
+			$('ul.mainmenu').hide();
+		}
+	});
+
+	
 	/*
 	 * Footer Fix
 	 */
@@ -55,9 +85,9 @@ jQuery(document).ready(function($)  {
 	 // Fix for Responsive Gallery
      
      
-     $('div.csc-textpic-imagecolumn').unwrap();
+     $('.unwrapper div.csc-textpic-imagecolumn').unwrap();
      //.each(function () {
-     $('div.csc-textpic-imagecolumn').addClass('galleryfix');
+     $('.unwrapper div.csc-textpic-imagecolumn').addClass('galleryfix');
      //}
      // End Fix
 	
@@ -222,17 +252,6 @@ jQuery(document).ready(function($)  {
 	  	});
 	});
 	
-	/**
-	 * Menu Fix
-	 */
-	
-	$(window).resize(function() {
-		if ($(window).width() >= 945) {
-			$('ul.mainmenu').fadeIn('fast');
-		} else {
-			$('ul.mainmenu').hide();
-		}
-	});
 
 	// bxSlider
 	console.log('Vor Slider');
