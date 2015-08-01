@@ -44,6 +44,7 @@ jQuery(document).ready(function($)  {
 	
 	$(window).resize(function() {
 		resizeIframe();
+		//resizeImage();
 		if ($(window).width() >= 945) {
 			$('ul.mainmenu').fadeIn('fast');
 		} else {
@@ -109,12 +110,12 @@ jQuery(document).ready(function($)  {
       * Fix Shortcode Height
       */
       
-     var sc1 = $('.shortcodes_left').height();
-     var sc2 = $('.shortcodes_middle').height();
-     var sc3 = $('.shortcodes_right').height();
+     var sc1 = $('.shortcodes_left .sc_item').height();
+     var sc2 = $('.shortcodes_middle .sc_item').height();
+     var sc3 = $('.shortcodes_right .sc_item').height();
      var max = sc1;
      
-     console.log('Max: ' + max );
+     console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
      resizeShortcodes();
      
  	function resizeShortcodes () {
@@ -129,9 +130,10 @@ jQuery(document).ready(function($)  {
 			     	 console.log('Max: ' + max );
 			     }
 		    
-		     	$('.shortcodes_left').height(max);
-		     	$('.shortcodes_middle').height(max);
-		     	$('.shortcodes_right').height(max);
+		     	$('.shortcodes_left .sc_item').height(max);
+		     	$('.shortcodes_middle .sc_item').height(max);
+		     	$('.shortcodes_right .sc_item').height(max);
+		     	
 		   //  }
  	}
  	
@@ -260,7 +262,7 @@ jQuery(document).ready(function($)  {
 		mode : 'fade',
 		useCSS : 'false'
 	});
-/*	
+	
 	var slider = $('.slider'),
 		img = $('.sliderimg img');
 
@@ -269,15 +271,17 @@ jQuery(document).ready(function($)  {
 		//console.log("Height img" + img.height());
 		if (slider.height() > img.height() ) {
 			img.addClass('scaleheight');
+			img.css("height", slider.height());
 			//$('.sliderimg img').each().addClass('scaleheight');
 		} else {
 			img.removeClass('scaleheight');
-			$('.sliderimg img').each().removeClass('scaleheight');
+			img.css("height", "auto");
+		//	$('.sliderimg img').removeClass('scaleheight');
 		}
 		//bxslider.destroySlider();
 		//bxslider.bxSlider();
 	}
-	*/
+	
 	$('.bxslider img').unwrap().unwrap().unwrap().unwrap().unwrap();
 	//unnötige Wraps entfernen.
 
@@ -285,7 +289,7 @@ jQuery(document).ready(function($)  {
 	
 	//resizeImage();
 	//	$(window).resize(resizeImage);
-	
+	//resizeImage();
 		 console.log('Ende');
 
 });
