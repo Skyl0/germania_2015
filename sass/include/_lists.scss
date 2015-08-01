@@ -9,14 +9,14 @@
  ul li {
    position: relative;
    left: 20px;
-   line-height: 20px;
+   line-height: 30px;
  }
  
  ul li::before {
     content: "\f0c8";
     font-family: "FontAwesome";
     display: inline-block;
-    color: $gray1;
+    color: $weinrot;
     font-size: 12px;
     position: relative;
     bottom: 1px;

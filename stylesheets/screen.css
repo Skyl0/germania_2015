@@ -512,7 +512,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px;
   position: absolute;
   top: 50px;
-  margin: 0 10px 0  0 !important;
+  right: 0px;
+  margin: 0 10px !important;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
@@ -1334,14 +1335,14 @@ body.scrollfixed .footer {
 .content_right ul li {
   position: relative;
   left: 20px;
-  line-height: 20px;
+  line-height: 30px;
 }
 /* line 15, ../sass/include/_lists.scss */
 .content_right ul li::before {
   content: "\f0c8";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #555555;
+  color: #990036;
   font-size: 12px;
   position: relative;
   bottom: 1px;
