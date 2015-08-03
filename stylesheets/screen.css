@@ -254,8 +254,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 9, ../sass/include/_classes.scss */
-.tacenter {
-  text-align: center;
+.tacenter, .align-center {
+  text-align: center !important;
 }
 
 /* line 13, ../sass/include/_classes.scss */
@@ -1353,7 +1353,7 @@ body.scrollfixed .footer {
 .content_right ul {
   list-style: outside none none;
   padding: 10px;
-  background: #cccccc;
+  background: #DDDDDD;
 }
 /* line 9, ../sass/include/_lists.scss */
 .content_right ul li {

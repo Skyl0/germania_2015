@@ -6,8 +6,8 @@
    float: left;
  }
  
-.tacenter {
-  text-align: center;
+.tacenter, .align-center {
+  text-align: center !important;
 }
 
 .tajustify {
@@ -40,3 +40,4 @@ display: none !important;
 .galleryfix {
   margin-right: 10px !important;
 }
+
