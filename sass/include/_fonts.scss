@@ -1,38 +1,139 @@
 @font-face {
-font-family: OpenSans;
-src: url('../fonts/OpenSans-Regular.ttf');
-font-weight: normal;
-font-style: normal;
+    font-family: 'aleo_bold';
+    src: url('../fonts/Aleo-Bold-webfont.eot');
+    src: url('../fonts/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo-Bold-webfont.woff') format('woff'),
+         url('../fonts/Aleo-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo-Bold-webfont.svg#aleo_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
-font-family: OpenSans;
-src: url('../fonts/OpenSans-Bold.ttf');
-font-weight: bold;
-font-style: normal;
+    font-family: 'aleo_light';
+    src: url('../fonts/Aleo-Light-webfont.eot');
+    src: url('../fonts/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo-Light-webfont.woff') format('woff'),
+         url('../fonts/Aleo-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo-Light-webfont.svg#aleo_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
-font-family: OpenSans;
-src: url('../fonts/OpenSans-Italic.ttf');
-font-weight: normal;
-font-style: italic;
+    font-family: 'aleo_regular';
+    src: url('../fonts/Aleo-Regular-webfont.eot');
+    src: url('../fonts/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo-Regular-webfont.woff') format('woff'),
+         url('../fonts/Aleo-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo-Regular-webfont.svg#aleo_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('../fonts/quicksand-bold-webfont.eot');
+    src: url('../fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand-bold-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-bold-webfont.woff') format('woff'),
+         url('../fonts/quicksand-bold-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
-font-family: OpenSans;
-src: url('../fonts/OpenSans-BoldItalic.ttf');
-font-weight: bold;
-font-style: italic;
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular-webfont.eot');
+    src: url('../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('../fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
+
+@font-face {
+    font-family: 'cooper_hewittbold';
+    src: url('../fonts/cooperhewitt-bold-webfont.eot');
+    src: url('../fonts/cooperhewitt-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cooperhewitt-bold-webfont.woff2') format('woff2'),
+         url('../fonts/cooperhewitt-bold-webfont.woff') format('woff'),
+         url('../fonts/cooperhewitt-bold-webfont.ttf') format('truetype'),
+         url('../fonts/cooperhewitt-bold-webfont.svg#cooper_hewittbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cooper_hewittbook';
+    src: url('../fonts/cooperhewitt-book-webfont.eot');
+    src: url('../fonts/cooperhewitt-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cooperhewitt-book-webfont.woff2') format('woff2'),
+         url('../fonts/cooperhewitt-book-webfont.woff') format('woff'),
+         url('../fonts/cooperhewitt-book-webfont.ttf') format('truetype'),
+         url('../fonts/cooperhewitt-book-webfont.svg#cooper_hewittbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cooper_hewittlight';
+    src: url('../fonts/cooperhewitt-light-webfont.eot');
+    src: url('../fonts/cooperhewitt-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cooperhewitt-light-webfont.woff2') format('woff2'),
+         url('../fonts/cooperhewitt-light-webfont.woff') format('woff'),
+         url('../fonts/cooperhewitt-light-webfont.ttf') format('truetype'),
+         url('../fonts/cooperhewitt-light-webfont.svg#cooper_hewittlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/RobotoCondensed-Regular-webfont.eot');
+    src: url('../fonts/RobotoCondensed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoCondensed-Regular-webfont.woff') format('woff'),
+         url('../fonts/RobotoCondensed-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoCondensed-Regular-webfont.svg#roboto') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 html {
- // font-size: 15px;
+   font-family: "cooper_hewittbook", Arial, sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "roboto", Arial, sans-serif;
 }
 
 h1 {
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 1.5em;
+  line-height: 1.6em;
   margin-bottom: 20px;
 }
 
@@ -41,15 +142,16 @@ h1 a {
 }
 
 h2 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.5em;
+ // font-weight: bold;
   margin: 20px 0;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 1.2em;
+   line-height: 1.3em;
+ // font-weight: bold;
   margin: 20px 0;
 }
 
@@ -59,21 +161,26 @@ p {
 
 p.bodytext {
   margin-bottom: 10px;
-  font-size: 15px; 
+  font-size: $default; 
+  font-family: "cooper_hewittbook", Arial, sans-serif;
 }
 
+.menu {
+  font-family: "cooper_hewittlight", Arial, sans-serif;
+}
 
 caption {
   font-size: $small !important;
   text-align: center !important;
   line-height: $small * 1.5;  
   margin-top: 5px;
-  font-style: italic;
+ // font-style: italic;
   width: 100%;
+  font-family: "cooper_hewittbook", Arial, sans-serif;
 }
 
 b {
-  font-weight: bold;
+  font-family: "cooper_hewittbold", Arial, sans-serif;
 }
 
 .top a, .footer a, .titlebar a {

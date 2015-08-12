@@ -166,7 +166,7 @@ span.hide-phone  {
  // top: $topfooterheight + $menuheight + $sliderheight;
   display: block;
   z-index: 1;
-  background: url('../images/zirkel_trans10.png') no-repeat top right;
+  background: url('../images/zirkel_trans10.png') no-repeat top center;
 }
 
 /**
@@ -288,6 +288,10 @@ span.hide-phone  {
     font-size: 28px;
     font-weight: bold;
   }
+}
+
+.content_right {
+  min-height: 230px;
 }
 
 /**

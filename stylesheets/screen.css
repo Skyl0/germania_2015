@@ -344,7 +344,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 40px;
   background: #555555;
   color: white;
-  font-size: 14px;
+  font-size: 0.9em;
 }
 @media (max-width: 959px) {
   /* line 33, ../sass/include/_layout.scss */
@@ -361,7 +361,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 47, ../sass/include/_layout.scss */
 .top i.fa {
-  font-size: 15px;
+  font-size: 1em;
   margin-right: 5px;
 }
 
@@ -390,7 +390,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .footer {
     height: 40px;
     line-height: 40px;
-    font-size: 14px;
+    font-size: 0.9em;
   }
 }
 @media (max-width: 959px) {
@@ -398,7 +398,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .footer {
     height: 80px;
     line-height: 40px;
-    font-size: 12px;
+    font-size: 0.8em;
   }
 }
 
@@ -411,7 +411,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 87, ../sass/include/_layout.scss */
 .footer i.fa {
-  font-size: 15px;
+  font-size: 1em;
   margin-right: 5px;
 }
 
@@ -513,7 +513,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   display: block;
   z-index: 1;
-  background: url("../images/zirkel_trans10.png") no-repeat top right;
+  background: url("../images/zirkel_trans10.png") no-repeat top center;
 }
 
 /**
@@ -642,155 +642,214 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
 }
 
+/* line 293, ../sass/include/_layout.scss */
+.content_right {
+  min-height: 230px;
+}
+
 /**
  *   Bottom Definitions
  */
-/* line 297, ../sass/include/_layout.scss */
+/* line 301, ../sass/include/_layout.scss */
 .bottom {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
 @media (max-width: 959px) {
-  /* line 304, ../sass/include/_layout.scss */
+  /* line 308, ../sass/include/_layout.scss */
   .bottom_left, .bottom_middle, .bottom_right {
     margin-bottom: 20px;
   }
 }
 
-/* line 310, ../sass/include/_layout.scss */
+/* line 314, ../sass/include/_layout.scss */
 .bottom_left i.fa {
   width: 30px;
-  font-size: 15px;
+  font-size: 1em;
 }
 
-/* line 315, ../sass/include/_layout.scss */
+/* line 319, ../sass/include/_layout.scss */
 .bottom_left p {
   line-height: 20px;
   margin-bottom: 20px;
 }
 
-/* line 320, ../sass/include/_layout.scss */
+/* line 324, ../sass/include/_layout.scss */
 .bottom_left h1 {
   border-bottom: 2px solid black;
   margin: 0 0 20px 0;
 }
 
-/* line 324, ../sass/include/_layout.scss */
+/* line 328, ../sass/include/_layout.scss */
 .bottom_middle h1 {
   border-bottom: 2px solid #990036;
   margin: 0 0 20px 0;
 }
 
-/* line 329, ../sass/include/_layout.scss */
+/* line 333, ../sass/include/_layout.scss */
 .bottom_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: 0 0 20px 0;
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url("../fonts/OpenSans-Regular.ttf");
+  font-family: 'aleo_bold';
+  src: url("../fonts/Aleo-Bold-webfont.eot");
+  src: url("../fonts/Aleo-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Bold-webfont.woff") format("woff"), url("../fonts/Aleo-Bold-webfont.ttf") format("truetype"), url("../fonts/Aleo-Bold-webfont.svg#aleo_bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: OpenSans;
-  src: url("../fonts/OpenSans-Bold.ttf");
-  font-weight: bold;
+  font-family: 'aleo_light';
+  src: url("../fonts/Aleo-Light-webfont.eot");
+  src: url("../fonts/Aleo-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Light-webfont.woff") format("woff"), url("../fonts/Aleo-Light-webfont.ttf") format("truetype"), url("../fonts/Aleo-Light-webfont.svg#aleo_light") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: OpenSans;
-  src: url("../fonts/OpenSans-Italic.ttf");
+  font-family: 'aleo_regular';
+  src: url("../fonts/Aleo-Regular-webfont.eot");
+  src: url("../fonts/Aleo-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Regular-webfont.woff") format("woff"), url("../fonts/Aleo-Regular-webfont.ttf") format("truetype"), url("../fonts/Aleo-Regular-webfont.svg#aleo_regular") format("svg");
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 @font-face {
-  font-family: OpenSans;
-  src: url("../fonts/OpenSans-BoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'quicksandbold';
+  src: url("../fonts/quicksand-bold-webfont.eot");
+  src: url("../fonts/quicksand-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand-bold-webfont.woff2") format("woff2"), url("../fonts/quicksand-bold-webfont.woff") format("woff"), url("../fonts/quicksand-bold-webfont.ttf") format("truetype"), url("../fonts/quicksand-bold-webfont.svg#quicksandbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-/* line 33, ../sass/include/_fonts.scss */
+@font-face {
+  font-family: 'quicksandregular';
+  src: url("../fonts/quicksand-regular-webfont.eot");
+  src: url("../fonts/quicksand-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/quicksand-regular-webfont.woff2") format("woff2"), url("../fonts/quicksand-regular-webfont.woff") format("woff"), url("../fonts/quicksand-regular-webfont.ttf") format("truetype"), url("../fonts/quicksand-regular-webfont.svg#quicksandregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cooper_hewittbold';
+  src: url("../fonts/cooperhewitt-bold-webfont.eot");
+  src: url("../fonts/cooperhewitt-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cooperhewitt-bold-webfont.woff2") format("woff2"), url("../fonts/cooperhewitt-bold-webfont.woff") format("woff"), url("../fonts/cooperhewitt-bold-webfont.ttf") format("truetype"), url("../fonts/cooperhewitt-bold-webfont.svg#cooper_hewittbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cooper_hewittbook';
+  src: url("../fonts/cooperhewitt-book-webfont.eot");
+  src: url("../fonts/cooperhewitt-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cooperhewitt-book-webfont.woff2") format("woff2"), url("../fonts/cooperhewitt-book-webfont.woff") format("woff"), url("../fonts/cooperhewitt-book-webfont.ttf") format("truetype"), url("../fonts/cooperhewitt-book-webfont.svg#cooper_hewittbook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'cooper_hewittlight';
+  src: url("../fonts/cooperhewitt-light-webfont.eot");
+  src: url("../fonts/cooperhewitt-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cooperhewitt-light-webfont.woff2") format("woff2"), url("../fonts/cooperhewitt-light-webfont.woff") format("woff"), url("../fonts/cooperhewitt-light-webfont.ttf") format("truetype"), url("../fonts/cooperhewitt-light-webfont.svg#cooper_hewittlight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/RobotoCondensed-Regular-webfont.eot");
+  src: url("../fonts/RobotoCondensed-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensed-Regular-webfont.woff") format("woff"), url("../fonts/RobotoCondensed-Regular-webfont.ttf") format("truetype"), url("../fonts/RobotoCondensed-Regular-webfont.svg#roboto") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 125, ../sass/include/_fonts.scss */
+html {
+  font-family: "cooper_hewittbook", Arial, sans-serif;
+}
+
+/* line 130, ../sass/include/_fonts.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "roboto", Arial, sans-serif;
+}
+
+/* line 134, ../sass/include/_fonts.scss */
 h1 {
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 1.5em;
+  line-height: 1.6em;
   margin-bottom: 20px;
 }
 
-/* line 39, ../sass/include/_fonts.scss */
+/* line 140, ../sass/include/_fonts.scss */
 h1 a {
   text-decoration: none;
 }
 
-/* line 43, ../sass/include/_fonts.scss */
+/* line 144, ../sass/include/_fonts.scss */
 h2 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.5em;
   margin: 20px 0;
 }
 
-/* line 50, ../sass/include/_fonts.scss */
+/* line 151, ../sass/include/_fonts.scss */
 h3 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.3em;
   margin: 20px 0;
 }
 
-/* line 56, ../sass/include/_fonts.scss */
+/* line 158, ../sass/include/_fonts.scss */
 p {
   line-height: 150%;
 }
 
-/* line 60, ../sass/include/_fonts.scss */
+/* line 162, ../sass/include/_fonts.scss */
 p.bodytext {
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 1em;
+  font-family: "cooper_hewittbook", Arial, sans-serif;
 }
 
-/* line 66, ../sass/include/_fonts.scss */
+/* line 168, ../sass/include/_fonts.scss */
+.menu {
+  font-family: "cooper_hewittlight", Arial, sans-serif;
+}
+
+/* line 172, ../sass/include/_fonts.scss */
 caption {
-  font-size: 14px !important;
+  font-size: 0.9em !important;
   text-align: center !important;
-  line-height: 21px;
+  line-height: 1.35em;
   margin-top: 5px;
-  font-style: italic;
   width: 100%;
+  font-family: "cooper_hewittbook", Arial, sans-serif;
 }
 
-/* line 75, ../sass/include/_fonts.scss */
+/* line 182, ../sass/include/_fonts.scss */
 b {
-  font-weight: bold;
+  font-family: "cooper_hewittbold", Arial, sans-serif;
 }
 
-/* line 79, ../sass/include/_fonts.scss */
+/* line 186, ../sass/include/_fonts.scss */
 .top a, .footer a, .titlebar a {
   color: white;
   text-decoration: none;
 }
 
-/* line 84, ../sass/include/_fonts.scss */
+/* line 191, ../sass/include/_fonts.scss */
 .top a:hover, .footer a:hover, .titlebar a:hover {
   color: #cccccc;
   text-decoration: underline;
 }
 
-/* line 89, ../sass/include/_fonts.scss */
+/* line 196, ../sass/include/_fonts.scss */
 a {
   color: black;
   transition: all 0.3s;
 }
 
-/* line 94, ../sass/include/_fonts.scss */
+/* line 201, ../sass/include/_fonts.scss */
 a:hover {
   color: #777777;
 }
 
-/* line 99, ../sass/include/_fonts.scss */
+/* line 206, ../sass/include/_fonts.scss */
 sub {
-  font-size: 12px;
+  font-size: 0.8em;
   position: relative;
   top: 3px;
 }
@@ -904,7 +963,7 @@ ul.mainmenu {
 @media (min-width: 960px) {
   /* line 20, ../sass/include/_othermenus.scss */
   .content_left li.sidecurrent a {
-    border-bottom: 2px solid #e7a300;
+    border-bottom: 1px solid #e7a300;
   }
   /* line 24, ../sass/include/_othermenus.scss */
   .content_left ul li a {
@@ -912,11 +971,11 @@ ul.mainmenu {
     font-size: 18px;
     display: block;
     text-decoration: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   }
   /* line 32, ../sass/include/_othermenus.scss */
   .content_left ul li a:hover {
-    border-bottom: 2px solid #990036;
+    border-bottom: 1px solid #990036;
   }
   /* line 36, ../sass/include/_othermenus.scss */
   .content_left ul.deepness3 li a {
@@ -941,7 +1000,7 @@ ul.mainmenu {
 
   /* line 64, ../sass/include/_othermenus.scss */
   .content_left li.sidecurrent a {
-    border-bottom: 2px solid #e7a300;
+    border-bottom: 1px solid #e7a300;
   }
   /* line 68, ../sass/include/_othermenus.scss */
   .content_left ul li a {
@@ -951,11 +1010,11 @@ ul.mainmenu {
     font-size: 16px;
     display: block;
     text-decoration: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   }
   /* line 78, ../sass/include/_othermenus.scss */
   .content_left ul li a:hover {
-    border-bottom: 2px solid #990036;
+    border-bottom: 1px solid #990036;
   }
   /* line 83, ../sass/include/_othermenus.scss */
   .content_left ul.deepness3 li a {
@@ -984,7 +1043,7 @@ ul.mainmenu {
 /* line 22, ../sass/include/_slider.scss */
 .slider p {
   padding: 10px;
-  font-size: 18px;
+  font-size: 1.1em;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
@@ -1274,7 +1333,7 @@ body.scrollfixed .menu {
   background-color: white;
   top: 0px;
   width: 100%;
-  z-index: 9999;
+  z-index: 500;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -1378,8 +1437,8 @@ body.scrollfixed .footer {
 .csc-mailform label em {
   text-transform: none;
   color: #990036;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.8em;
+  line-height: 0.9em;
 }
 /* line 10, ../sass/include/_forms.scss */
 .csc-mailform .csc-form-element {
@@ -1444,14 +1503,43 @@ body.scrollfixed .footer {
   top: 3px;
   color: #990036;
   font-style: italic;
-  font-size: 12px;
+  font-size: 0.8em;
   text-transform: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
+/* line 4, ../sass/include/_gallery.scss */
+.theme-lightbox ul {
+  list-style: none !important;
+  padding: 0 !important;
+  background: none !important;
+}
+/* line 10, ../sass/include/_gallery.scss */
+.theme-lightbox ul li {
+  list-style: none !important;
+  position: static !important;
+  line-height: 0;
+}
+/* line 16, ../sass/include/_gallery.scss */
+.theme-lightbox ul li::before {
+  content: "" !important;
+}
+/* line 20, ../sass/include/_gallery.scss */
+.theme-lightbox .tx-yag-breadcrumbcomtainer {
+  border: 0 !important;
+}
+/* line 24, ../sass/include/_gallery.scss */
+.theme-lightbox .tx-yag-gallery-galleryinfo, .theme-lightbox .tx-yag-album-albuminfo {
+  line-height: 1.4em;
+}
+/* line 28, ../sass/include/_gallery.scss */
+.theme-lightbox .tx-yag-pager {
+  height: 1.2em;
+  margin-top: 10px;
+}
+
 /* line 36, ../sass/screen.scss */
 html, body {
-  font-family: "OpenSans", Arial, sans-serif;
   height: auto;
 }
 

@@ -1,0 +1,39 @@
+.theme-lightbox {
+ // margin: 0 ;
+ // padding: 0;
+  ul {
+    list-style: none !important;
+    padding: 0 !important;
+    background: none !important;
+  }
+  
+  ul li {
+    list-style: none !important;
+    position: static !important;
+    line-height: 0;
+  }
+  
+  ul li::before {
+    content: "" !important;
+  }
+  
+  .tx-yag-breadcrumbcomtainer {
+    border: 0 !important;
+  }
+  
+  .tx-yag-gallery-galleryinfo, .tx-yag-album-albuminfo {
+    line-height: 1.4em;
+  }
+  
+  .tx-yag-pager {
+    height: 1.2em;
+    margin-top: 10px;
+    //position: relative;
+    //top: 10px;
+  }
+  
+  .tx-yag-items {
+    //margin-top: 20px;
+  }
+  
+}
