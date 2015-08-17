@@ -338,7 +338,7 @@ $(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
 			minSlides: 1,
 			maxSlides: 13,
 			moveSlides: 1,
-			//easing: 'linear',
+			easing: 'linear',
 			slideWidth: 150,
 			slideMargin: 5,
 			infiniteLoop: true,
