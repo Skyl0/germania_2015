@@ -1,69 +1,4 @@
 @font-face {
-    font-family: 'aleo_bold';
-    src: url('../fonts/Aleo-Bold-webfont.eot');
-    src: url('../fonts/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Aleo-Bold-webfont.woff') format('woff'),
-         url('../fonts/Aleo-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/Aleo-Bold-webfont.svg#aleo_bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'aleo_light';
-    src: url('../fonts/Aleo-Light-webfont.eot');
-    src: url('../fonts/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Aleo-Light-webfont.woff') format('woff'),
-         url('../fonts/Aleo-Light-webfont.ttf') format('truetype'),
-         url('../fonts/Aleo-Light-webfont.svg#aleo_light') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'aleo_regular';
-    src: url('../fonts/Aleo-Regular-webfont.eot');
-    src: url('../fonts/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Aleo-Regular-webfont.woff') format('woff'),
-         url('../fonts/Aleo-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/Aleo-Regular-webfont.svg#aleo_regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'quicksandbold';
-    src: url('../fonts/quicksand-bold-webfont.eot');
-    src: url('../fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/quicksand-bold-webfont.woff2') format('woff2'),
-         url('../fonts/quicksand-bold-webfont.woff') format('woff'),
-         url('../fonts/quicksand-bold-webfont.ttf') format('truetype'),
-         url('../fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'quicksandregular';
-    src: url('../fonts/quicksand-regular-webfont.eot');
-    src: url('../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/quicksand-regular-webfont.woff2') format('woff2'),
-         url('../fonts/quicksand-regular-webfont.woff') format('woff'),
-         url('../fonts/quicksand-regular-webfont.ttf') format('truetype'),
-         url('../fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-@font-face {
     font-family: 'cooper_hewittbold';
     src: url('../fonts/cooperhewitt-bold-webfont.eot');
     src: url('../fonts/cooperhewitt-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -75,9 +10,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'cooper_hewittbook';
@@ -92,9 +24,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'cooper_hewittlight';
     src: url('../fonts/cooperhewitt-light-webfont.eot');
@@ -107,7 +36,6 @@
     font-style: normal;
 
 }
-
 
 @font-face {
     font-family: 'roboto';
@@ -207,4 +135,17 @@ sub {
   font-size: $smaller;
   position: relative;
   top: 3px;
+}
+
+sup {
+  font-size: $smaller;
+  position: relative;
+  top: -3px;
+}
+
+.slider a:before, .shortcodes a:before {
+  content: "\f101  ";
+  font-family: "FontAwesome";
+  //margin-left: 5px;
+  //font-size: 1.0em;
 }

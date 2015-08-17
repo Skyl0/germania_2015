@@ -11,6 +11,8 @@
   }
   margin: 0 auto;
 }
+
+
 /**
  *   Youtube iframe
  */
@@ -177,7 +179,10 @@ span.hide-phone  {
     color: white;
     background: url('../images/Das_Haus_online.jpg') no-repeat center bottom;
     background-size: cover;
+   
 }
+
+
 /** 
  *   Title Bar Effects
  */
@@ -191,6 +196,7 @@ span.hide-phone  {
     margin: 0 10px !important;
     display: inline-block;
     background-color: rgba(51,51,51,0.75);
+     transition: all 1.0;
   }
   p {
     padding: 10px;
@@ -204,6 +210,25 @@ span.hide-phone  {
  // top: 20px;
 }
 
+@media (max-width: 490px) {
+  .titlebar {
+    h1 {
+      font-size: 1.2em;
+      top: 20px !important;
+    }
+  }
+}
+/** 
+ *   Slider unten
+ */
+
+.imagebar {
+  background: $gray1;
+ // box-shadow: inset 2px 0px 10px rgba(0,0,0,0.5);
+  width: 100%;
+  position:relative;
+ // left: -10%;
+}
 /**
  *   Shortcode Definitions
  */
@@ -291,7 +316,7 @@ span.hide-phone  {
 }
 
 .content_right {
-  min-height: 300px;
+  //min-height: 300px;
 }
 
 /**

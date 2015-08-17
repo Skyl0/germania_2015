@@ -12,7 +12,20 @@
 
 jQuery(document).ready(function($)  {
 	
+	var parent = $('html');
+	var celement = $('div.content_right');
 	
+	function getHeightFixed() {
+		if (parent.height() < $(window).height() ) {
+			// top part 260px , footer 40px
+			console.log("Html: " + parent.height() + " Window: " + $(window).height());
+			var fixedsize = 276 + 150;
+			
+			var minheight = parent.height() - ( $('.bottom').height() + fixedsize );
+			celement.css('min-height', minheight);
+		}
+	}
+	getHeightFixed();
 	// Burger Menu
 	
 	var burger = $('.burger');
@@ -57,13 +70,14 @@ jQuery(document).ready(function($)  {
 	$(window).resize(function() {
 		resizeIframe();
 		resizeImage();
+		getHeightFixed();
+		
 		if ($(window).width() >= 945) {
 			$('ul.mainmenu').fadeIn('fast');
 		} else {
 			$('ul.mainmenu').hide();
 		}
 	});
-
 	
 	/*
 	 * Footer Fix
@@ -76,7 +90,7 @@ jQuery(document).ready(function($)  {
 	/*
 	 * fadeOut Slider Text while scrolling
 	 */
-	var slidertext = $('.sliderimg .container');
+	/*var slidertext = $('.sliderimg .container');
 	var start_at = 100;
 	var fade_px = 50;
 	var opacity = 1.0;
@@ -94,7 +108,7 @@ jQuery(document).ready(function($)  {
 			slidertext.css('opacity',opacity);
 		}
 	});
-	
+	*/
 	 // Fix for Responsive Gallery
      
      
@@ -273,21 +287,22 @@ jQuery(document).ready(function($)  {
 	var bxslider = $('.bxslider').bxSlider({
 		mode : 'fade',
 		useCSS : 'false',
-		onSlideAfter: function(){
+		onSlideBefore: function(){
 		    // do mind-blowing JS stuff here
-		    resizeImage();
+		  //  resizeImage();
+		  animateContainer();
 		}
+		
 	});
 	
-	var slider = $('.bx-viewport'),
-		img = $('.sliderimg img');
+	var slider = $('.bx-viewport');
+	var	img = $('.sliderimg img');
 		
-	resizeImage();
+	
 
 	function resizeImage() {
 		var sliderratio = slider.width() / slider.height();
 		console.log ('SliderRatio: ' + sliderratio);
-		
 		
 		img.each(function (index){
 			var imgratio = $(this).actual( 'width' ) / $(this).actual( 'height' );;
@@ -298,19 +313,57 @@ jQuery(document).ready(function($)  {
 			} else {
 				$(this).removeClass("img_gt_slider");
 			}
-		});
-		
-	
+		});	
 	}
+	
+	resizeImage(); // ONE TIME FIRST
+	
+	var container = $('.sliderimg .csc-textpic-text');
+	
+	function animateContainer() {
+		container.css('left','-300px');
+		container.css('opacity','0');
+		container.animate({ left: "10px", opacity: "1", duration: "1500", easing: "swing" });
+	}
+	
+	// 2nd Slider
+		//if( $.trim( $('.imagebar .imgslider').html() ).length ) {
+
+//	};
+$(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
+	$('.imagebar .imgslider a.ger_gallery').unwrap().unwrap().unwrap().unwrap().unwrap();
+	$('.imagebar .imgslider a.ger_gallery').wrap('<div class="imgslidewrap"></div>');
+		
+		$('.imagebar .imgslider').bxSlider({
+			minSlides: 1,
+			maxSlides: 13,
+			moveSlides: 1,
+			//easing: 'linear',
+			slideWidth: 150,
+			slideMargin: 5,
+			infiniteLoop: true,
+			hideControlOnEnd: true,
+			pager:false,
+			useCSS: false,
+			pause: 0,
+			speed: 3000,
+			randomStart: true
+		});
+	// End Parallax
 	
 	$('.bxslider img').unwrap().unwrap().unwrap().unwrap().unwrap();
 	//unnötige Wraps entfernen.
 
 	$('.bxslider .csc-textpic-text').addClass('container');
 	
-	//resizeImage();
-	//	$(window).resize(resizeImage);
-	//resizeImage();
-		 console.log('Ende');
+	//Parallax
+	
+	$('.slider .container').attr('data-parallax','{"y":500, "smoothness":9}'); //,"duration":2000,"smoothness":10 }');
+	
+	//$('.slider .parallax-layer').parallax();
+		
+	console.log('Ende');
+		 
+	
 
 });
