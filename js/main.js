@@ -13,13 +13,13 @@
 jQuery(document).ready(function($)  {
 	
 	var parent = $('html');
-	var celement = $('div.content_right');
+	var celement = $('.content');
 	
 	function getHeightFixed() {
 		if (parent.height() < $(window).height() ) {
 			// top part 260px , footer 40px
 			console.log("Html: " + parent.height() + " Window: " + $(window).height());
-			var fixedsize = 276 + 150;
+			var fixedsize = 276;
 			
 			var minheight = parent.height() - ( $('.bottom').height() + fixedsize );
 			celement.css('min-height', minheight);
@@ -340,6 +340,7 @@ $(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
 			slideMargin: 3,
 			infiniteLoop: true,
 			hideControlOnEnd: true,
+			preloadImages: 'visible',
 			pager:false,
 			autoHover: true,
 			controls: false,

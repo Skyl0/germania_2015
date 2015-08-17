@@ -32,6 +32,19 @@
   
   a {
     color: white;
+    
+  }
+  
+  p a {
+   // position: relative;
+   // margin-left: 0px;
+    letter-spacing: 0.02em;
+    transition: all 0.2s;
+  }
+  
+  p a:hover {
+     letter-spacing: 0.05em;
+   // margin-left: 3px;
   }
 }
 /**
@@ -68,6 +81,30 @@
   }
 }
 
+.imagebar .ov {
+  position: absolute;
+  height: 150px;
+  display: block;
+  width: 100px;
+  z-index: 1000;
+}
+
+.imagebar .container {
+  position: relative;
+}
+
+.imagebar {
+ 
+ .overlay_right {
+   right: 0px;
+   background: linear-gradient(to left, rgba(51,51,51,1) 5%,rgba(51,51,51,0) 100%); /* W3C */
+ }
+ .overlay_left {
+   left: 0px;
+   background: linear-gradient(to right, rgba(51,51,51,1) 5%,rgba(51,51,51,0) 100%); /* W3C */
+ }
+  
+}
 
 /**
  * BxSlider v4.1.2 - Fully loaded, responsive content slider
@@ -93,7 +130,12 @@
     @include breakpoint(desktop) {height: $sliderheight !important;}
     @include breakpoint(phone) {height: $slidermobile !important;}
 	max-width: 100%;
-}
+} 
+ //@include breakpoint(desktop) {
+  .slider .bxslider {
+   // top: -17px;
+  }
+//}
 
 .imagebar .bx-wrapper {
   position: relative;
@@ -136,8 +178,8 @@
 	//left: -5px;
 	background: #fff;
 	//height: $sliderheight !important;
-	  @include breakpoint(desktop) {height: $sliderheight !important;}
-    @include breakpoint(phone) {height: $slidermobile !important;}
+	  @include breakpoint(desktop) {height: ($sliderheight + 17px) !important; top: -17px;}
+    @include breakpoint(phone) {height: ($slidermobile + 17px) !important; top: -17px;}
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);

@@ -23,6 +23,13 @@ body.scrollfixed .titlebar {
   top: $menuheight;
 }
 
+body.scrollfixed .imagebar {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 0px;
+}
+
 body.scrollfixed .zirkel {
   display: block;
   width: 100%;

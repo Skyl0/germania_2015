@@ -241,6 +241,20 @@ span.hide-phone  {
   background: rgba(155,155,155,0.5);// Was lightgray 
 }
 
+.shortcodes {
+    p a {
+   // position: relative;
+   // margin-left: 0px;
+    letter-spacing: 0.02em;
+    transition: all 0.2s;
+  }
+  
+  p a:hover {
+     letter-spacing: 0.05em;
+   // margin-left: 3px;
+  }
+}
+
 .shortcodes > div {
   position: relative;
  // display: inline-block;
