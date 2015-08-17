@@ -565,44 +565,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  */
 /* line 225, ../sass/include/_layout.scss */
 .imagebar {
-  background: #555555;
+  background: #333;
   width: 100%;
   position: relative;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
 }
 
 /**
  *   Shortcode Definitions
  */
-/* line 236, ../sass/include/_layout.scss */
+/* line 238, ../sass/include/_layout.scss */
 .shortcodes {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
-/* line 242, ../sass/include/_layout.scss */
+/* line 244, ../sass/include/_layout.scss */
 .shortcodes > div {
   position: relative;
 }
 
-/* line 247, ../sass/include/_layout.scss */
+/* line 249, ../sass/include/_layout.scss */
 .shortcodes_left h1 {
   border-bottom: 2px solid black;
   margin: -5px 0 20px 0;
 }
 
-/* line 251, ../sass/include/_layout.scss */
+/* line 253, ../sass/include/_layout.scss */
 .shortcodes_middle h1 {
   border-bottom: 2px solid #990036;
   margin: -5px 0 20px 0;
 }
 
-/* line 256, ../sass/include/_layout.scss */
+/* line 258, ../sass/include/_layout.scss */
 .shortcodes_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: -5px 0 20px 0;
 }
 
-/* line 261, ../sass/include/_layout.scss */
+/* line 263, ../sass/include/_layout.scss */
 .sc_item {
   position: relative;
   z-index: 500;
@@ -610,25 +612,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 959px) {
-  /* line 261, ../sass/include/_layout.scss */
+  /* line 263, ../sass/include/_layout.scss */
   .sc_item {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 960px) {
-  /* line 275, ../sass/include/_layout.scss */
+  /* line 277, ../sass/include/_layout.scss */
   .sc_item p.bodytext {
     margin-bottom: 40px;
   }
 }
 @media (max-width: 959px) {
-  /* line 281, ../sass/include/_layout.scss */
+  /* line 283, ../sass/include/_layout.scss */
   .sc_item p.bodytext {
     margin-bottom: 40px;
   }
 }
-/* line 286, ../sass/include/_layout.scss */
+/* line 288, ../sass/include/_layout.scss */
 .sc_item i {
   margin-bottom: 10px;
   color: #777777;
@@ -636,7 +638,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
 }
 
-/* line 293, ../sass/include/_layout.scss */
+/* line 295, ../sass/include/_layout.scss */
 .sc_item a {
   position: absolute;
   bottom: 10px;
@@ -646,7 +648,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Content Definitions
  */
-/* line 303, ../sass/include/_layout.scss */
+/* line 305, ../sass/include/_layout.scss */
 .content {
   position: relative;
   z-index: 0;
@@ -654,7 +656,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: none;
 }
 
-/* line 312, ../sass/include/_layout.scss */
+/* line 314, ../sass/include/_layout.scss */
 .content h1 {
   font-size: 28px;
   font-weight: bold;
@@ -663,44 +665,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Bottom Definitions
  */
-/* line 326, ../sass/include/_layout.scss */
+/* line 328, ../sass/include/_layout.scss */
 .bottom {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
 @media (max-width: 959px) {
-  /* line 333, ../sass/include/_layout.scss */
+  /* line 335, ../sass/include/_layout.scss */
   .bottom_left, .bottom_middle, .bottom_right {
     margin-bottom: 20px;
   }
 }
 
-/* line 339, ../sass/include/_layout.scss */
+/* line 341, ../sass/include/_layout.scss */
 .bottom_left i.fa {
   width: 30px;
   font-size: 1em;
 }
 
-/* line 344, ../sass/include/_layout.scss */
+/* line 346, ../sass/include/_layout.scss */
 .bottom_left p {
   line-height: 20px;
   margin-bottom: 20px;
 }
 
-/* line 349, ../sass/include/_layout.scss */
+/* line 351, ../sass/include/_layout.scss */
 .bottom_left h1 {
   border-bottom: 2px solid black;
   margin: 0 0 20px 0;
 }
 
-/* line 353, ../sass/include/_layout.scss */
+/* line 355, ../sass/include/_layout.scss */
 .bottom_middle h1 {
   border-bottom: 2px solid #990036;
   margin: 0 0 20px 0;
 }
 
-/* line 358, ../sass/include/_layout.scss */
+/* line 360, ../sass/include/_layout.scss */
 .bottom_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: 0 0 20px 0;
@@ -827,14 +829,14 @@ a:hover {
 
 /* line 134, ../sass/include/_fonts.scss */
 sub {
-  font-size: 0.8em;
+  font-size: 0.7em;
   position: relative;
   top: 3px;
 }
 
 /* line 140, ../sass/include/_fonts.scss */
 sup {
-  font-size: 0.8em;
+  font-size: 0.7em;
   position: relative;
   top: -3px;
 }
@@ -1823,16 +1825,28 @@ html, body {
   height: auto;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 li.csc-uploads-element-pdf:before {
   content: "\f1c1" !important;
   margin-left: 0 !important;
   font-size: 1.1em !important;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 li.csc-uploads-element-pdf span {
   display: inline;
+}
+
+/* line 57, ../sass/screen.scss */
+.fb-like {
+  margin-left: 30px;
+}
+
+/* line 62, ../sass/screen.scss */
+.fb-like > span {
+  vertical-align: text-top !important;
+  position: relative;
+  top: -1px;
 }
 
 @media screen and (max-width: 400px) {

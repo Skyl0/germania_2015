@@ -41,6 +41,7 @@ html, body {
 //  overflow-x: hidden;
 }
 
+//PDF ICON
 li.csc-uploads-element-pdf:before {
   content: "\f1c1" !important;
   margin-left: 0 !important;
@@ -49,6 +50,19 @@ li.csc-uploads-element-pdf:before {
 
 li.csc-uploads-element-pdf span {
   display: inline;
+}
+
+//FACEBOOK SHIT
+
+.fb-like {
+  //display: none;
+  margin-left: 30px;
+}
+
+.fb-like > span {
+  vertical-align: text-top !important;
+  position: relative;
+  top: -1px;
 }
 
 // GRIDLE SETTINGS

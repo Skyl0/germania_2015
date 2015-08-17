@@ -326,10 +326,7 @@ jQuery(document).ready(function($)  {
 		container.animate({ left: "10px", opacity: "1", duration: "1500", easing: "swing" });
 	}
 	
-	// 2nd Slider
-		//if( $.trim( $('.imagebar .imgslider').html() ).length ) {
 
-//	};
 $(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
 	$('.imagebar .imgslider a.ger_gallery').unwrap().unwrap().unwrap().unwrap().unwrap();
 	$('.imagebar .imgslider a.ger_gallery').wrap('<div class="imgslidewrap"></div>');
@@ -340,16 +337,18 @@ $(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
 			moveSlides: 1,
 			easing: 'linear',
 			slideWidth: 150,
-			slideMargin: 5,
+			slideMargin: 3,
 			infiniteLoop: true,
 			hideControlOnEnd: true,
 			pager:false,
+			autoHover: true,
+			controls: false,
 			useCSS: false,
 			pause: 0,
 			speed: 3000,
 			randomStart: true
 		});
-	// End Parallax
+	
 	
 	$('.bxslider img').unwrap().unwrap().unwrap().unwrap().unwrap();
 	//unnötige Wraps entfernen.
@@ -358,7 +357,7 @@ $(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
 	
 	//Parallax
 	
-	$('.slider .container').attr('data-parallax','{"y":500, "smoothness":9}'); //,"duration":2000,"smoothness":10 }');
+	$('.slider .container').attr('data-parallax','{"y":350, "smoothness":9}'); //,"duration":2000,"smoothness":10 }');
 	
 	//$('.slider .parallax-layer').parallax();
 		

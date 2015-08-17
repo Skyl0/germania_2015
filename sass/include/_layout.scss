@@ -223,10 +223,12 @@ span.hide-phone  {
  */
 
 .imagebar {
-  background: $gray1;
+  background: #333;
  // box-shadow: inset 2px 0px 10px rgba(0,0,0,0.5);
   width: 100%;
   position:relative;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
  // left: -10%;
 }
 /**
