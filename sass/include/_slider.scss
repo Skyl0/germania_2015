@@ -40,16 +40,26 @@
  @include breakpoint(phone) {
   .sliderimg .container {
    padding-right: $stdmargin;
+   
   }
+  .sliderimg .container {
+    h1 { font-size: 1.5em; }
+    p { font-size: 0.9em; }
+   }
+   
+   .sliderimg .csc-textpic-text {
+     top: 50px !important;
+   }
 }
 /**
  * Height Fix
  */
  
- img.scaleheight {
+ img.img_gt_slider {
 	//height: 100% !important;
 	width: auto !important;
 	//height: 500px !important;
+	left: -50%;
  }
 
 

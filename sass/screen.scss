@@ -41,6 +41,16 @@ html, body {
 //  overflow-x: hidden;
 }
 
+li.csc-uploads-element-pdf:before {
+  content: "\f1c1" !important;
+  margin-left: 0 !important;
+  font-size: 1.1em !important;    
+}
+
+li.csc-uploads-element-pdf span {
+  display: inline;
+}
+
 // GRIDLE SETTINGS
 $settings : (
   context : 12,

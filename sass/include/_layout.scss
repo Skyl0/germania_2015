@@ -173,9 +173,9 @@ span.hide-phone  {
  *   Titlebar Definitions
  */
 .titlebar {
-    height: 200px;
+    height: 120px;
     color: white;
-    background: url('../images/Das_Haus_online.jpg') no-repeat center center;
+    background: url('../images/Das_Haus_online.jpg') no-repeat center bottom;
     background-size: cover;
 }
 /** 
@@ -186,7 +186,7 @@ span.hide-phone  {
   h1 {
     padding: 10px;
     position: absolute;
-    top: 50px;
+    top: 35px;
     right: 0px;
     margin: 0 10px !important;
     display: inline-block;
@@ -291,7 +291,7 @@ span.hide-phone  {
 }
 
 .content_right {
-  min-height: 230px;
+  min-height: 300px;
 }
 
 /**

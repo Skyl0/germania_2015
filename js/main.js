@@ -22,6 +22,18 @@ jQuery(document).ready(function($)  {
 		menu.slideToggle();
 	});
 
+
+	    $('.scrollup a').click(function(event){
+	    	event.preventDefault();
+	        $('html, body').animate({scrollTop:0}, 'slow');
+	        return false;
+	    });
+	/*var scrollup = ".scrollup a";
+	
+	$(".scrollup a").onClick( function(event) {
+		event.preventDefault();
+		$('html,body').animate({scrollTop: (element).offset().top + "px"});
+	});*/
 	/**
 	 * Youtube Iframe Respo Fix 
 	 */
@@ -44,7 +56,7 @@ jQuery(document).ready(function($)  {
 	
 	$(window).resize(function() {
 		resizeIframe();
-		//resizeImage();
+		resizeImage();
 		if ($(window).width() >= 945) {
 			$('ul.mainmenu').fadeIn('fast');
 		} else {
@@ -65,7 +77,7 @@ jQuery(document).ready(function($)  {
 	 * fadeOut Slider Text while scrolling
 	 */
 	var slidertext = $('.sliderimg .container');
-	var start_at = 140;
+	var start_at = 100;
 	var fade_px = 50;
 	var opacity = 1.0;
 	
@@ -260,26 +272,35 @@ jQuery(document).ready(function($)  {
 		
 	var bxslider = $('.bxslider').bxSlider({
 		mode : 'fade',
-		useCSS : 'false'
+		useCSS : 'false',
+		onSlideAfter: function(){
+		    // do mind-blowing JS stuff here
+		    resizeImage();
+		}
 	});
 	
-	var slider = $('.slider'),
+	var slider = $('.bx-viewport'),
 		img = $('.sliderimg img');
-
+		
+	resizeImage();
 
 	function resizeImage() {
-		//console.log("Height img" + img.height());
-		if (slider.height() > img.height() ) {
-			img.addClass('scaleheight');
-			img.css("height", slider.height());
-			//$('.sliderimg img').each().addClass('scaleheight');
-		} else {
-			img.removeClass('scaleheight');
-			img.css("height", "auto");
-		//	$('.sliderimg img').removeClass('scaleheight');
-		}
-		//bxslider.destroySlider();
-		//bxslider.bxSlider();
+		var sliderratio = slider.width() / slider.height();
+		console.log ('SliderRatio: ' + sliderratio);
+		
+		
+		img.each(function (index){
+			var imgratio = $(this).actual( 'width' ) / $(this).actual( 'height' );;
+			console.log ('ImgRatio('+index+'): ' + imgratio);
+			
+			if (imgratio > sliderratio) {
+				$(this).addClass("img_gt_slider");
+			} else {
+				$(this).removeClass("img_gt_slider");
+			}
+		});
+		
+	
 	}
 	
 	$('.bxslider img').unwrap().unwrap().unwrap().unwrap().unwrap();
