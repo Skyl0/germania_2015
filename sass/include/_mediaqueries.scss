@@ -5,6 +5,9 @@
   @if $point == desktop {
      @media (min-width: 960px) { @content ; }
   }
+  @else if $point == medium {
+     @media (min-width: 370px) and (max-width: 959px) { @content ; }
+  }
   @else if $point == phone {
      @media (max-width: 959px) { @content ; }
   }

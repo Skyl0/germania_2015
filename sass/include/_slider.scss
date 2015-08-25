@@ -46,7 +46,54 @@
      letter-spacing: 0.05em;
    // margin-left: 3px;
   }
+  
 }
+.imagebar {
+  visibility: hidden;
+  border: 0;
+  height: 0;
+}
+
+.imagebar caption{
+  display: none;
+}
+
+.youtube {
+  top: 20px !important;
+  text-align: right;  
+}
+#yt_iframe {
+  //max-width: 960px;
+  margin: 0 auto;
+  height: 80%;
+}
+
+.cbQuickGoogleMap img {
+  border: none !important;
+}
+
+.youtube h1 {
+  font-size: 1.5em !important;
+  padding-right: 20px;
+}
+
+.slider iframe {
+  position: absolute;
+  top: 17px;
+   @include breakpoint(phone) {
+    height: 350px !important;
+   }
+}
+
+.slider h1, .slider p {
+    opacity: 1;
+   transition: all 1s linear; 
+  }
+  
+  .hide-container .slider h1, .hide-container .slider p{
+    opacity: 0 !important;
+  }
+
 /**
  *   Mobile
  */
@@ -56,8 +103,8 @@
    
   }
   .sliderimg .container {
-    h1 { font-size: 1.5em; }
-    p { font-size: 0.9em; }
+    h1 { font-size: 2em; }
+    p { font-size: 0.95em; }
    }
    
    .sliderimg .csc-textpic-text {
@@ -215,9 +262,14 @@
 
 /* LOADER */
 
-.bx-wrapper .bx-loading {
+.slider {
+  position: relative;
+}
+
+.slider_load {
+  display: none;
 	min-height: 50px;
-	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	background: url(../images/preload.gif) center center no-repeat #555;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -526,7 +578,7 @@
   margin-top: -16px;
   outline: 0;
   //width: 32px;
-  height: 4.0em;
+  //height: 4.0em;
   //text-indent: -9999px;
   z-index: 9999;
 }

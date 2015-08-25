@@ -13,12 +13,12 @@
 jQuery(document).ready(function($)  {
 	
 	var parent = $('html');
-	var celement = $('.content');
+	var celement = $('.content_right');
 	
 	function getHeightFixed() {
 		if (parent.height() < $(window).height() ) {
 			// top part 260px , footer 40px
-			console.log("Html: " + parent.height() + " Window: " + $(window).height());
+		//	console.log("Html: " + parent.height() + " Window: " + $(window).height());
 			var fixedsize = 276;
 			
 			var minheight = parent.height() - ( $('.bottom').height() + fixedsize );
@@ -63,6 +63,8 @@ jQuery(document).ready(function($)  {
 		iframe.height(iheight);
 	}
 	
+	resizeIframe();
+	
 	/**
 	 * Menu Fix
 	 */
@@ -87,28 +89,7 @@ jQuery(document).ready(function($)  {
      	$(this).text(" " + $(this).text() + " "); 
      });
 	
-	/*
-	 * fadeOut Slider Text while scrolling
-	 */
-	/*var slidertext = $('.sliderimg .container');
-	var start_at = 100;
-	var fade_px = 50;
-	var opacity = 1.0;
-	
-	$(document).scroll( function() {
-		var yscroll = $(document).scrollTop();
-		if (yscroll <= start_at) {
-			opacity = 1.0;
-			slidertext.css('opacity',opacity);
-			//console.log("Erste If erreicht!");
-		} else {
-			opacity = (fade_px - (yscroll - start_at)) / fade_px ;
-			//console.log("opacity" + opacity);
-			if ( opacity < 0 ) {opacity = 0.0;}
-			slidertext.css('opacity',opacity);
-		}
-	});
-	*/
+
 	 // Fix for Responsive Gallery
      
      
@@ -119,19 +100,6 @@ jQuery(document).ready(function($)  {
      // End Fix
 	
 	
-	/*
-	 * Search Focus on Blur
-	  
-	
-	var Input = $('input.searchword');
-    var default_value = Input.val();
-
-    Input.focus(function() {
-        if(Input.val() == default_value) Input.val("");
-    }).blur(function(){
-        if(Input.val().length == 0) Input.val(default_value);
-    });
-     */
      /*
       * Fix Shortcode Height
       */
@@ -141,7 +109,7 @@ jQuery(document).ready(function($)  {
      var sc3 = $('.shortcodes_right .sc_item').height();
      var max = sc1;
      
-     console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
+ //    console.log('Max: ' + max + " [sc1/2/3]: " + sc1 + " " + sc2 + " " + sc3);
      resizeShortcodes();
      
  	function resizeShortcodes () {
@@ -149,11 +117,11 @@ jQuery(document).ready(function($)  {
  		     //if ($().width() > 959 ){
 			     if (sc2 > max) {			     	
 					max = sc2;	
-					 console.log('Max: ' + max );	     	
+			//		 console.log('Max: ' + max );	     	
 			     }
 			     if (sc3 > max) {
 			     	max = sc3;
-			     	 console.log('Max: ' + max );
+		//	     	 console.log('Max: ' + max );
 			     }
 		    
 		     	$('.shortcodes_left .sc_item').height(max);
@@ -163,65 +131,6 @@ jQuery(document).ready(function($)  {
 		   //  }
  	}
  	
-
-
-    /**
-     * Search Box
-     */ 
-    
-    var sword = '.searchbox-sword';
-    var sbox = '.sword-border';
-    var form = '.indexedsearch';
-    var button = '.searchbox-button';
-    //var color = '#208ccc';
-    
-    var focus = false;
-   $(sbox).hide("slide", { direction: "right" }, 1);
-   // sb_off();
-    
-     $(button).hover( function() {
-		sb_on();		
-     }, function() {
-		setTimeout(sb_off,1500);		
-	 } );
-     
-     function sb_off() {
-     	if (!focus) {
-     		     	 
-	     	$(sbox).hide("slide", { direction: "right" }, 500);
-	     	
-	     	setTimeout(function() {
-	     		$(sbox).css("z-index", "-9999"); 
-		     	$(form).css("z-index", "100");
-		     	
-		     	$(button).animate().removeClass('fill');
-	     		$(button).attr('src','fileadmin/hkk/images/search_blue.png');
-	     	}, 500);
-	     	
-    
-	    }
-     }
-     function sb_on() {
-     	$(button).animate().addClass('fill');
-     	$(button).attr('src','fileadmin/hkk/images/search_white.png');
-     
-     	$(form).css("z-index", "501"); 
-     	$(sbox).css("z-index", "9999");  
-     	$(sbox).show("slide", { direction: "right" }, 500);
-     	   	
-     	
-     }
-    
-     
-     $(sword).focus( function()
-     { 
-     	focus = true;
-     });
-     
-     $(sword).blur( function() {
-     	focus = false;
-     	setTimeout(sb_off,1500);     	
-     });
      
      /**
       * Fixedmenu
@@ -236,12 +145,19 @@ jQuery(document).ready(function($)  {
        
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
+    	//console.log("Scroll at Y: " + y);
 	    if (y >= 40 && !isTouchDevice) //  &&  $(window).width() >= 959 ) 
 	    {	
 	        $('body').addClass('scrollfixed');
 	    } else {
 	        $('body').removeClass('scrollfixed');
 	    }
+	    
+	    if (y >= 350 && !isTouchDevice) {
+	    	$('body').addClass('hide-container');
+	    } else {
+	    	$('body').removeClass('hide-container');
+	    } 
     }
 
      
@@ -281,32 +197,19 @@ jQuery(document).ready(function($)  {
 	});
 	
 
-	// bxSlider
-	console.log('Vor Slider');
-		
-	var bxslider = $('.bxslider').bxSlider({
-		mode : 'fade',
-		useCSS : 'false',
-		onSlideBefore: function(){
-		    // do mind-blowing JS stuff here
-		  //  resizeImage();
-		  animateContainer();
-		}
-		
-	});
-	
-	var slider = $('.bx-viewport');
-	var	img = $('.sliderimg img');
-		
-	
 
+
+	
+	//var sliderview = $('.slider .bx-viewport');
+	var	img = $('.slider img');
+	
 	function resizeImage() {
 		var sliderratio = slider.width() / slider.height();
-		console.log ('SliderRatio: ' + sliderratio);
+	//	console.log ('SliderRatio: ' + sliderratio);
 		
 		img.each(function (index){
 			var imgratio = $(this).actual( 'width' ) / $(this).actual( 'height' );;
-			console.log ('ImgRatio('+index+'): ' + imgratio);
+		//	console.log('ImgRatio('+index+'): ' + imgratio);
 			
 			if (imgratio > sliderratio) {
 				$(this).addClass("img_gt_slider");
@@ -314,9 +217,12 @@ jQuery(document).ready(function($)  {
 				$(this).removeClass("img_gt_slider");
 			}
 		});	
+		//return true;
 	}
 	
-	resizeImage(); // ONE TIME FIRST
+	resizeImage();
+	// Container animate
+	
 	
 	var container = $('.sliderimg .csc-textpic-text');
 	
@@ -324,6 +230,50 @@ jQuery(document).ready(function($)  {
 		container.css('left','-300px');
 		container.css('opacity','0');
 		container.animate({ left: "10px", opacity: "1", duration: "1500", easing: "swing" });
+	}
+	
+	// bxSlider
+	//console.log('Vor Slider');
+	$('a#c55').remove();
+	
+		
+	var bxslider = $('.bxslider').bxSlider({
+		mode : 'fade',
+		useCSS : 'false',
+		preloadImages: 'all',
+		infiniteLoop: 'true',
+		//preventDefaultSwipeY: 'true',
+		onSlideBefore: function(){
+		  animateContainer();
+		},
+		onSliderLoad: function() {
+			$('.slider_load').fadeOut(500);	
+			setTimeout(resizeImage,10);		
+		}
+		
+	});	
+	
+	$('#yt_iframe').addClass('bx-pager-link','bx-pager-item');
+	$('#yt_iframe').on('click', function(event) {
+		//$('.slider .bx-pager').hide();	
+	//	console.log("Click Iframe !");
+		bxslider.stopShow();
+		$('.bx-pager').hide();
+		//$('.slider .bx-pager').css({
+		//	"left":"-9999"
+		//});	
+		console.log("Click Iframe End!");
+	});
+	
+	// Carousel
+	
+	var imgslider = $('.imagebar .imgslider');
+		
+	if ( $.trim(imgslider.html() ) ) {	// wenn element nicht leer
+		$('.imagebar').css('visibility','visible');
+		$('.imagebar').css('border-top','3px solid #333');
+	    $('.imagebar').css('border-bottom','3px solid #333');
+	    $('.imagebar').css('height','150px');
 	}
 	
 
@@ -342,7 +292,7 @@ $(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
 			hideControlOnEnd: true,
 			preloadImages: 'visible',
 			pager:false,
-			autoHover: true,
+			autoHover: false,
 			controls: false,
 			useCSS: false,
 			pause: 0,
@@ -352,17 +302,20 @@ $(".imagebar .imgslider a:has(> img)").addClass('ger_gallery');
 	
 	
 	$('.bxslider img').unwrap().unwrap().unwrap().unwrap().unwrap();
-	//unnötige Wraps entfernen.
+	//usnnötige Wraps entfernen.
 
 	$('.bxslider .csc-textpic-text').addClass('container');
 	
 	//Parallax
+	if (!isTouchDevice) {
+		$('.slider .container').attr('data-parallax','{"y":550, "smoothness":9}');//, "scaleX": 0.8, "scaleY": 0.9}'); //,"duration":2000,"smoothness":10 }');
+	}
 	
-	$('.slider .container').attr('data-parallax','{"y":350, "smoothness":9}'); //,"duration":2000,"smoothness":10 }');
-	
+	//$('.tx-jh-simple-youtube').addClass('sliderimg');
 	//$('.slider .parallax-layer').parallax();
 		
-	console.log('Ende');
+		
+	//console.log('Ende');
 		 
 	
 

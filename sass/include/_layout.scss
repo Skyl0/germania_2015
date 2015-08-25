@@ -286,12 +286,41 @@ span.hide-phone  {
 	margin-bottom: $stdmargin;
   }
 }
+/* Shortcode Alternate Layout */
+@include breakpoint(medium) {
+  .sc_item {
+    width: 300px !important;
+//     margin: 0 !important;  
+  }
+  .shortcodes .grid-mobile-12 {
+    width: 350px !important;
+    float: left;
+     display: block; 
+     
+  }
+
+  @media (min-width: 350px) {
+      .shortcodes .container {
+      width: 350px !important;
+       }
+  }
+  
+  @media (min-width: 700px) {
+      .shortcodes .container {
+      width: 700px !important;
+       }
+  }
+  
+  
+}
+
 
 @include breakpoint(desktop) {
   .sc_item p.bodytext {
     margin-bottom: $stdmargin * 2;
   } 
  }
+ 
 
  @include breakpoint(phone) {
   .sc_item p.bodytext {
@@ -328,6 +357,11 @@ span.hide-phone  {
   h1  {
     font-size: 28px;
     font-weight: bold;
+  }
+  
+  img {
+    border: 3px solid $lightgray2 !important;
+    //box-shadow: 2px 3px 11px #000;
   }
 }
 

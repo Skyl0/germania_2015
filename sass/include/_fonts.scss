@@ -103,8 +103,12 @@ caption {
   line-height: $small * 1.5;  
   margin-top: 5px;
  // font-style: italic;
-  width: 100%;
+  width: auto;
   font-family: "cooper_hewittbook", Arial, sans-serif;
+}
+
+.csc-textpic-caption {
+  font-size: 0.8em;
 }
 
 b {
@@ -138,9 +142,9 @@ sub {
 }
 
 sup {
-  font-size: $smallest;
+  font-size: $smallest *0.9;
   position: relative;
-  top: -3px;
+  top: -5px;
 }
 
 .slider a:before, .shortcodes a:before {
