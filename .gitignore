@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+.sass-cache/
+.sass-cache/*
+
 # Folder config file
 Desktop.ini
 
