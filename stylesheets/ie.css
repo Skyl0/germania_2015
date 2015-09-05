@@ -9,7 +9,7 @@
  * Version 0.5.1
  * ----------------
  */
-/* line 5, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,45 +31,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -375,10 +375,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: right;
 }
 
+/* line 62, ../sass/include/_layout.scss */
+.top_mid {
+  position: relative;
+}
+
+/* line 66, ../sass/include/_layout.scss */
+.addthis_sharing_toolbox {
+  position: absolute;
+  top: 10px;
+  height: 20px !important;
+}
+
+/* line 72, ../sass/include/_layout.scss */
+.at4-icon {
+  top: -5px;
+  position: relative;
+}
+
 /**
  *   Footer Definitions
  */
-/* line 66, ../sass/include/_layout.scss */
+/* line 81, ../sass/include/_layout.scss */
 .footer {
   height: 40px;
   line-height: 40px;
@@ -386,7 +404,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: white;
 }
 @media (min-width: 960px) {
-  /* line 66, ../sass/include/_layout.scss */
+  /* line 81, ../sass/include/_layout.scss */
   .footer {
     height: 40px;
     line-height: 40px;
@@ -394,7 +412,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media (max-width: 959px) {
-  /* line 66, ../sass/include/_layout.scss */
+  /* line 81, ../sass/include/_layout.scss */
   .footer {
     height: 80px;
     line-height: 40px;
@@ -403,25 +421,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media screen and (max-width: 470px) {
-  /* line 83, ../sass/include/_layout.scss */
+  /* line 98, ../sass/include/_layout.scss */
   span.hide-phone {
     display: none;
   }
 }
 
-/* line 89, ../sass/include/_layout.scss */
+/* line 104, ../sass/include/_layout.scss */
 .footer i.fa {
   font-size: 1em;
   margin-right: 5px;
 }
 
-/* line 94, ../sass/include/_layout.scss */
+/* line 109, ../sass/include/_layout.scss */
 .footer_left, .footer_right {
   height: 40px;
 }
 
 @media (min-width: 960px) {
-  /* line 98, ../sass/include/_layout.scss */
+  /* line 113, ../sass/include/_layout.scss */
   .footer_right {
     text-align: right;
   }
@@ -430,18 +448,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Menu Definitions
  */
-/* line 105, ../sass/include/_layout.scss */
+/* line 120, ../sass/include/_layout.scss */
 .menu {
   height: 100px;
   background: white;
 }
 
-/* line 110, ../sass/include/_layout.scss */
+/* line 125, ../sass/include/_layout.scss */
 .menu_right {
   position: relative;
 }
 
-/* line 114, ../sass/include/_layout.scss */
+/* line 129, ../sass/include/_layout.scss */
 .menu_right img {
   position: absolute;
   right: 10px;
@@ -450,7 +468,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px 0;
 }
 @media screen and (max-width: 350px) {
-  /* line 114, ../sass/include/_layout.scss */
+  /* line 129, ../sass/include/_layout.scss */
   .menu_right img {
     width: 188px;
     height: 64px;
@@ -462,24 +480,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * 2 Spaltiges Layout
  */
 @media (min-width: 960px) {
-  /* line 131, ../sass/include/_layout.scss */
+  /* line 146, ../sass/include/_layout.scss */
   .col2_left, .col2_right {
     width: 47.5%;
     float: left;
   }
 
-  /* line 136, ../sass/include/_layout.scss */
+  /* line 151, ../sass/include/_layout.scss */
   .col2_left {
     padding-right: 2.5%;
   }
 
-  /* line 140, ../sass/include/_layout.scss */
+  /* line 155, ../sass/include/_layout.scss */
   .col2_right {
     padding-left: 2.5%;
   }
 }
 @media (max-width: 959px) {
-  /* line 146, ../sass/include/_layout.scss */
+  /* line 161, ../sass/include/_layout.scss */
   .col2_left {
     margin-bottom: 20px;
   }
@@ -487,19 +505,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Slider Definitions
  */
-/* line 154, ../sass/include/_layout.scss */
+/* line 169, ../sass/include/_layout.scss */
 .slider {
   background: url("../images/Das_Haus_online.jpg") no-repeat center center;
   background-size: cover;
 }
 @media (min-width: 960px) {
-  /* line 154, ../sass/include/_layout.scss */
+  /* line 169, ../sass/include/_layout.scss */
   .slider {
     height: 500px;
   }
 }
 @media (max-width: 959px) {
-  /* line 154, ../sass/include/_layout.scss */
+  /* line 169, ../sass/include/_layout.scss */
   .slider {
     height: 350px;
   }
@@ -508,7 +526,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /** 
  *   Zirkel Background
  */
-/* line 166, ../sass/include/_layout.scss */
+/* line 181, ../sass/include/_layout.scss */
 .zirkel {
   position: relative;
   display: block;
@@ -519,7 +537,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Titlebar Definitions
  */
-/* line 177, ../sass/include/_layout.scss */
+/* line 192, ../sass/include/_layout.scss */
 .titlebar {
   height: 120px;
   color: white;
@@ -530,7 +548,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /** 
  *   Title Bar Effects
  */
-/* line 191, ../sass/include/_layout.scss */
+/* line 206, ../sass/include/_layout.scss */
 .titlebar h1 {
   padding: 10px;
   position: absolute;
@@ -541,20 +559,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: rgba(51, 51, 51, 0.75);
   transition: all 1.0;
 }
-/* line 201, ../sass/include/_layout.scss */
+/* line 216, ../sass/include/_layout.scss */
 .titlebar p {
   padding: 10px;
   display: inline-block;
   background-color: rgba(51, 51, 51, 0.75);
 }
 
-/* line 208, ../sass/include/_layout.scss */
+/* line 223, ../sass/include/_layout.scss */
 .titlebar > div {
   position: relative;
 }
 
 @media (max-width: 490px) {
-  /* line 215, ../sass/include/_layout.scss */
+  /* line 230, ../sass/include/_layout.scss */
   .titlebar h1 {
     font-size: 1.2em;
     top: 20px !important;
@@ -563,7 +581,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /** 
  *   Slider unten
  */
-/* line 225, ../sass/include/_layout.scss */
+/* line 240, ../sass/include/_layout.scss */
 .imagebar {
   background: #333;
   width: 100%;
@@ -575,46 +593,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Shortcode Definitions
  */
-/* line 238, ../sass/include/_layout.scss */
+/* line 253, ../sass/include/_layout.scss */
 .shortcodes {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
-/* line 245, ../sass/include/_layout.scss */
+/* line 260, ../sass/include/_layout.scss */
 .shortcodes p a {
   letter-spacing: 0.02em;
   transition: all 0.2s;
 }
-/* line 252, ../sass/include/_layout.scss */
+/* line 267, ../sass/include/_layout.scss */
 .shortcodes p a:hover {
   letter-spacing: 0.05em;
 }
 
-/* line 258, ../sass/include/_layout.scss */
+/* line 273, ../sass/include/_layout.scss */
 .shortcodes > div {
   position: relative;
 }
 
-/* line 263, ../sass/include/_layout.scss */
+/* line 278, ../sass/include/_layout.scss */
 .shortcodes_left h1 {
   border-bottom: 2px solid black;
   margin: -5px 0 20px 0;
 }
 
-/* line 267, ../sass/include/_layout.scss */
+/* line 282, ../sass/include/_layout.scss */
 .shortcodes_middle h1 {
   border-bottom: 2px solid #990036;
   margin: -5px 0 20px 0;
 }
 
-/* line 272, ../sass/include/_layout.scss */
+/* line 287, ../sass/include/_layout.scss */
 .shortcodes_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: -5px 0 20px 0;
 }
 
-/* line 277, ../sass/include/_layout.scss */
+/* line 292, ../sass/include/_layout.scss */
 .sc_item {
   position: relative;
   z-index: 500;
@@ -622,7 +640,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 959px) {
-  /* line 277, ../sass/include/_layout.scss */
+  /* line 292, ../sass/include/_layout.scss */
   .sc_item {
     margin-bottom: 20px;
   }
@@ -630,12 +648,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Shortcode Alternate Layout */
 @media (min-width: 370px) and (max-width: 959px) {
-  /* line 291, ../sass/include/_layout.scss */
+  /* line 306, ../sass/include/_layout.scss */
   .sc_item {
     width: 300px !important;
   }
 
-  /* line 295, ../sass/include/_layout.scss */
+  /* line 310, ../sass/include/_layout.scss */
   .shortcodes .grid-mobile-12 {
     width: 350px !important;
     float: left;
@@ -643,30 +661,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media (min-width: 370px) and (max-width: 959px) and (min-width: 350px) {
-  /* line 303, ../sass/include/_layout.scss */
+  /* line 318, ../sass/include/_layout.scss */
   .shortcodes .container {
     width: 350px !important;
   }
 }
 @media (min-width: 370px) and (max-width: 959px) and (min-width: 700px) {
-  /* line 309, ../sass/include/_layout.scss */
+  /* line 324, ../sass/include/_layout.scss */
   .shortcodes .container {
     width: 700px !important;
   }
 }
 @media (min-width: 960px) {
-  /* line 319, ../sass/include/_layout.scss */
+  /* line 334, ../sass/include/_layout.scss */
   .sc_item p.bodytext {
     margin-bottom: 40px;
   }
 }
 @media (max-width: 959px) {
-  /* line 326, ../sass/include/_layout.scss */
+  /* line 341, ../sass/include/_layout.scss */
   .sc_item p.bodytext {
     margin-bottom: 40px;
   }
 }
-/* line 331, ../sass/include/_layout.scss */
+/* line 346, ../sass/include/_layout.scss */
 .sc_item i {
   margin-bottom: 10px;
   color: #777777;
@@ -674,7 +692,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
 }
 
-/* line 338, ../sass/include/_layout.scss */
+/* line 353, ../sass/include/_layout.scss */
 .sc_item a {
   position: absolute;
   bottom: 10px;
@@ -684,7 +702,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Content Definitions
  */
-/* line 348, ../sass/include/_layout.scss */
+/* line 363, ../sass/include/_layout.scss */
 .content {
   position: relative;
   z-index: 0;
@@ -692,12 +710,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: none;
 }
 
-/* line 357, ../sass/include/_layout.scss */
+/* line 372, ../sass/include/_layout.scss */
 .content h1 {
   font-size: 28px;
   font-weight: bold;
 }
-/* line 362, ../sass/include/_layout.scss */
+/* line 377, ../sass/include/_layout.scss */
 .content img {
   border: 3px solid #cccccc !important;
 }
@@ -705,44 +723,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /**
  *   Bottom Definitions
  */
-/* line 376, ../sass/include/_layout.scss */
+/* line 391, ../sass/include/_layout.scss */
 .bottom {
   padding: 40px 0;
   background: rgba(155, 155, 155, 0.5);
 }
 
 @media (max-width: 959px) {
-  /* line 383, ../sass/include/_layout.scss */
+  /* line 398, ../sass/include/_layout.scss */
   .bottom_left, .bottom_middle, .bottom_right {
     margin-bottom: 20px;
   }
 }
 
-/* line 389, ../sass/include/_layout.scss */
+/* line 404, ../sass/include/_layout.scss */
 .bottom_left i.fa {
   width: 30px;
   font-size: 1em;
 }
 
-/* line 394, ../sass/include/_layout.scss */
+/* line 409, ../sass/include/_layout.scss */
 .bottom_left p {
   line-height: 20px;
   margin-bottom: 20px;
 }
 
-/* line 399, ../sass/include/_layout.scss */
+/* line 414, ../sass/include/_layout.scss */
 .bottom_left h1 {
   border-bottom: 2px solid black;
   margin: 0 0 20px 0;
 }
 
-/* line 403, ../sass/include/_layout.scss */
+/* line 418, ../sass/include/_layout.scss */
 .bottom_middle h1 {
   border-bottom: 2px solid #990036;
   margin: 0 0 20px 0;
 }
 
-/* line 408, ../sass/include/_layout.scss */
+/* line 423, ../sass/include/_layout.scss */
 .bottom_right h1 {
   border-bottom: 2px solid #e7a300;
   margin: 0 0 20px 0;

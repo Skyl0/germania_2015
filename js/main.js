@@ -204,17 +204,36 @@ jQuery(document).ready(function($)  {
 	var	img = $('.slider img');
 	
 	function resizeImage() {
-		var sliderratio = slider.width() / slider.height();
+		
+		var sliderh = slider.height();
+		var sliderw = slider.width();
+		var sliderratio = sliderw / sliderh;
 	//	console.log ('SliderRatio: ' + sliderratio);
 		
 		img.each(function (index){
-			var imgratio = $(this).actual( 'width' ) / $(this).actual( 'height' );;
+			
+			var imgh =  $(this).actual( 'height' );
+			var imgw = $(this).actual( 'width' );
+			var imgratio = imgw / imgh;
+			
+			var diffh = (sliderh - imgh) /4;
+			var diffw = (imgw - sliderw) /2;
+			console.log ("Diff(/2) H " + diffh + " W " + diffw);				
+			
 		//	console.log('ImgRatio('+index+'): ' + imgratio);
 			
+			//$(this).left(diffw);
+			
 			if (imgratio > sliderratio) {
-				$(this).addClass("img_gt_slider");
+				$(this).addClass("img_gt_slider");				
+				//$(this).css("top","0");
+				$(this).css("margin-right",diffw + "px");
 			} else {
 				$(this).removeClass("img_gt_slider");
+				$(this).css("margin-right","0");
+				//$(this).css("top",diffh + "px");
+				//$(this).left(0);
+				
 			}
 		});	
 		//return true;
