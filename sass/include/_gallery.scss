@@ -1,6 +1,8 @@
 .theme-lightbox {
  // margin: 0 ;
  // padding: 0;
+ 
+
   ul {
     list-style: none !important;
     padding: 0 !important;
@@ -74,3 +76,7 @@
     font-family: 'roboto';
   }
 }
+
+ .mfp-bottom-bar {
+   display:none;
+ }

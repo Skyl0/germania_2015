@@ -120,6 +120,7 @@ span.hide-phone  {
 .menu {
   height: $menuheight;
   background: white;
+  transition: height 0.1s;
 }
 
 .menu_right {

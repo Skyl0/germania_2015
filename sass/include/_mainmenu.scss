@@ -37,10 +37,10 @@ ul.mainmenu {
 		font-weight: bold;
 		color: black;
 		text-decoration: none;
-		background-color: white;
+		background-color: rgba(255,255,255,0.0);
 		//border-bottom: 3px solid $gray2;
 		display: block;
-		transition: all 0.3s;
+		transition: background-color 0.3s;
 	  }
 	  
 	  li a:hover {

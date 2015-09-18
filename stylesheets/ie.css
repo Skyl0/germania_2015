@@ -112,7 +112,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media (min-width: 960px) { .footer_right { text-align: right; } }
 
 /** Menu Definitions */
-.menu { height: 100px; background: white; }
+.menu { height: 100px; background: white; transition: height 0.1s; }
 
 .menu_right { position: relative; }
 
@@ -246,7 +246,7 @@ ul.mainmenu { list-style-type: none; }
 
 @media (min-width: 960px) { ul.mainmenu { display: block; }
   ul.mainmenu li { display: inline-block; }
-  ul.mainmenu li a { margin: 25px 0; letter-spacing: 2px; padding: 0 10px; height: 50px; line-height: 50px; font-weight: bold; color: black; text-decoration: none; background-color: white; display: block; transition: all 0.3s; }
+  ul.mainmenu li a { margin: 25px 0; letter-spacing: 2px; padding: 0 10px; height: 50px; line-height: 50px; font-weight: bold; color: black; text-decoration: none; background-color: rgba(255, 255, 255, 0); display: block; transition: background-color 0.3s; }
   ul.mainmenu li a:hover { background-color: #990036; color: white; } }
 @media (max-width: 959px) { ul.mainmenu { width: 100%; display: none; position: absolute; top: 100px; left: 0px; z-index: 100; }
   ul.mainmenu li { display: block; }
@@ -407,17 +407,20 @@ border-radius: 4px;*/ }
 .slider .bx-wrapper .bx-caption span { color: #fff; font-family: Arial; display: block; font-size: .85em; padding: 10px; }
 
 /** Fixed Menu and Slider */
-body.scrollfixed .menu { position: fixed; background-color: white; top: 0px; width: 100%; z-index: 500; box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); }
+body.scrollfixed .menu { position: fixed; background-color: white; top: 0px; width: 100%; z-index: 500; height: 60px; box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); }
 
-body.scrollfixed .slider { position: relative; width: 100%; top: 100px; }
+body.scrollfixed ul.mainmenu li a { margin: 5px 0 !important; }
+body.scrollfixed .menu_right img { margin: 0 !important; top: -25px !important; }
 
-body.scrollfixed .titlebar { position: relative; width: 100%; top: 100px; }
+body.scrollfixed .slider { position: relative; width: 100%; top: 60px; }
+
+body.scrollfixed .titlebar { position: relative; width: 100%; top: 60px; }
 
 body.scrollfixed .imagebar { width: 100%; position: relative; top: 0px; }
 
-body.scrollfixed .zirkel { display: block; width: 100%; position: relative; top: 100px; }
+body.scrollfixed .zirkel { display: block; width: 100%; position: relative; top: 60px; }
 
-body.scrollfixed .footer { position: relative; top: 100px; }
+body.scrollfixed .footer { position: relative; top: 60px; }
 
 /* SCROLL UP  */
 .footer .container, .bottom .container, .content .container { position: relative; }
@@ -462,6 +465,8 @@ body.scrollfixed .footer { position: relative; top: 100px; }
   .theme-lightbox .yag-item-thumb-outerframe { width: 33.3%; }
   .theme-lightbox .tx-yag-gallery-thumb-outerframe, .theme-lightbox .tx-yag-album-thumb-outerframe { width: 50% !important; } }
 .theme-lightbox .tx-yag-album-albuminfo a, .theme-lightbox .tx-yag-gallery-galleryinfo a { text-decoration: none !important; font-size: 1.25em; line-height: 1.4em; font-family: 'roboto'; }
+
+.mfp-bottom-bar { display: none; }
 
 html, body { height: auto; }
 

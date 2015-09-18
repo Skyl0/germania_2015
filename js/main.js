@@ -145,8 +145,10 @@ jQuery(document).ready(function($)  {
        
     function checkScrollPosition() {
     	var y = $(document).scrollTop();
+    	var toosmall = $(document).height() - $(window).height();
+    	console.log ("Doc - Win: " + toosmall);
     	//console.log("Scroll at Y: " + y);
-	    if (y >= 40 && !isTouchDevice) //  &&  $(window).width() >= 959 ) 
+	    if (y >= 40 && !isTouchDevice && toosmall > 120) //  &&  $(window).width() >= 959 ) 
 	    {	
 	        $('body').addClass('scrollfixed');
 	    } else {

@@ -8,19 +8,27 @@ body.scrollfixed .menu {
   top: 0px;
   width: 100%;
   z-index: 500;
+  height: 60px;
   box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
 }
+
+body.scrollfixed  {
+  ul.mainmenu li a { margin: 5px 0 !important; }
+  .menu_right img { margin: 0 !important; top: -25px !important; }
+ } 
 
 body.scrollfixed .slider {
   position: relative;
   width: 100%;
-  top: $menuheight;
+//  top: $menuheight;
+  top: 60px;
 }
 
 body.scrollfixed .titlebar {
   position: relative;
   width: 100%;
-  top: $menuheight;
+ //  top: $menuheight;
+  top: 60px;
 }
 
 body.scrollfixed .imagebar {
@@ -34,10 +42,12 @@ body.scrollfixed .zirkel {
   display: block;
   width: 100%;
   position: relative;
-  top: $menuheight;
+  //  top: $menuheight;
+  top: 60px;
 }
 
 body.scrollfixed .footer {
   position: relative;
-  top: $menuheight;
+  //  top: $menuheight;
+  top: 60px;
 }
